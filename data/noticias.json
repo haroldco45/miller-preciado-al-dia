@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-26T06:45:00-05:00",
-  "fuente": "semilla",
+  "actualizado": "2026-10-26T13:13:24-05:00",
+  "fuente": "robot",
   "noticias": [
     {
-      "titulo": "Arándano colombiano entra en fase de expansión y apuesta exportadora",
-      "resumen": "Miller Preciado, gerente general de Agroventure Capital, califica 2026 como punto de inflexión del arándano en Colombia: cerca de 1.000 ha en producción, planta de empaque en Tocancipá y meta de 500 ha al 2030.",
-      "medio": "Portal Frutícola",
-      "fecha": "2026-04-21T06:00:00-04:00",
-      "link": "https://www.portalfruticola.com/noticias/2026/04/21/arandano-colombia-2026/",
-      "imagen": "https://cdn.portalfruticola.com/2026/04/WhatsApp-Image-2026-04-20-at-12.58.54-PM-1.jpeg"
+      "titulo": "María Camila Vélez Echeverri liderará la expansión global de Agroventure Capital",
+      "resumen": "María Camila Vélez Echeverri liderará la expansión global de Agroventure Capital &nbsp;&nbsp; ABC Economía",
+      "medio": "ABC Economía",
+      "fecha": "2026-08-26T07:00:00.000Z",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVXpxTkV0cGpTdkJ0VGd3dzJfeVpjbFNTb2N0Q3hsTzlDNVNXckdsSmhjcEVUYjNlbHJNTlVLVXdJYmtOVWZQS0pZWXluM1dONENWWUZ3bUxZc2xGekR6NEZiTjlYcEZRRlU1VDd0Wmx6Y3VUQWxSOTR6eWx4WDBLZTgyWQ?oc=5",
+      "imagen": "img/reel-arandanos.jpg"
     },
     {
       "titulo": "Agro Venture Capital, ficha en la Organización Internacional del Arándano",
@@ -17,6 +17,14 @@
       "fecha": "2026-08-19T15:10:00-05:00",
       "link": "https://www.internationalblueberry.org/agro-venture-capital/",
       "imagen": "https://cdn.portalfruticola.com/2025/09/arandanos-Colombia.jpg"
+    },
+    {
+      "titulo": "Arándano colombiano entra en fase de expansión y apuesta exportadora",
+      "resumen": "Miller Preciado, gerente general de Agroventure Capital, califica 2026 como punto de inflexión del arándano en Colombia: cerca de 1.000 ha en producción, planta de empaque en Tocancipá y meta de 500 ha al 2030.",
+      "medio": "Portal Frutícola",
+      "fecha": "2026-04-21T06:00:00-04:00",
+      "link": "https://www.portalfruticola.com/noticias/2026/04/21/arandano-colombia-2026/",
+      "imagen": "https://cdn.portalfruticola.com/2026/04/WhatsApp-Image-2026-04-20-at-12.58.54-PM-1.jpeg"
     },
     {
       "titulo": "El agro: una de las mayores oportunidades de inversión de las próximas décadas",
@@ -51,100 +59,262 @@
       "imagen": "img/reel-dream-berries.jpg"
     },
     {
-      "titulo": "El crecimiento del cultivo de arándanos en Colombia ya es una realidad",
-      "resumen": "Con 760 ha registradas, Preciado proyectaba superar las 1.500 ha en 2025 y llevar su proyecto de 26 a 100 ha.",
-      "medio": "Portal Frutícola",
-      "fecha": "2025-01-28T09:00:00-05:00",
-      "link": "https://www.portalfruticola.com/noticias/2025/01/28/arandanos-en-colombia/",
-      "imagen": "https://cdn.portalfruticola.com/2025/01/arandanos-en-Colombia.jpeg"
-    },
-    {
       "titulo": "The expansion of blueberry production in Colombia is here",
       "resumen": "Entrevista en inglés: el reto del sector es abrir mercados y atraer fondos de inversión a proyectos de esta escala.",
       "medio": "FreshFruitPortal",
       "fecha": "2025-01-29T09:00:00-05:00",
       "link": "https://www.freshfruitportal.com/news/2025/01/29/the-expansion-of-blueberry-production-in-colombia-is-here/",
       "imagen": "https://cdn.portalfruticola.com/2025/09/arandanos-Colombia.jpg"
+    },
+    {
+      "titulo": "El crecimiento del cultivo de arándanos en Colombia ya es una realidad",
+      "resumen": "Con 760 ha registradas, Preciado proyectaba superar las 1.500 ha en 2025 y llevar su proyecto de 26 a 100 ha.",
+      "medio": "Portal Frutícola",
+      "fecha": "2025-01-28T09:00:00-05:00",
+      "link": "https://www.portalfruticola.com/noticias/2025/01/28/arandanos-en-colombia/",
+      "imagen": "https://cdn.portalfruticola.com/2025/01/arandanos-en-Colombia.jpeg"
     }
   ],
   "podcast": [
     {
       "titulo": "Coco en Colombia: el negocio agroindustrial que puede transformar el Caribe",
       "fecha": "2026-09-08",
-      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
-      "audio": ""
+      "resumen": "El cultivo de coco en Colombia puede convertirse en mucho más que una actividad agrícola: puede impulsar agroindustria, generar empleo rural y transformar el potencial productivo del Caribe. En este episodio de AgroApasionados conversamos con Luis Pico, empresario y exviceministro de Agricultura, so",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Coco-en-Colombia-el-negocio-agroindustrial-que-puede-transformar-el-Caribe-e3og6es",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/125360028/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-8-7%2F431396238-44100-2-be6c5a0a3d267.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
     },
     {
       "titulo": "Cómo convertir una finca de café en un negocio rentable y exportable",
       "fecha": "2026-08-31",
-      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
-      "audio": ""
+      "resumen": "Convertir una finca de café familiar en un negocio rentable, sostenible y con alcance internacional es posible. Alejandro Gil cuenta cómo pasó de no saber nada de agro a gestionar una finca de 18 hectáreas, desarrollar Bellavista Coffee y abrirse camino hasta el mercado alemán.En esta conversación h",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Cmo-convertir-una-finca-de-caf-en-un-negocio-rentable-y-exportable-e3o5bfj",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/125004723/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-31%2F430915783-44100-2-050512acb0789.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
     },
     {
       "titulo": "El liderazgo que transforma empresas agro junto a Bassis",
       "fecha": "2026-08-25",
-      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
-      "audio": ""
+      "resumen": "¿Por qué algunas empresas del agro logran crecer, exportar y construir equipos de alto desempeño mientras otras siguen enfrentando los mismos problemas año tras año?En este episodio de Agroapasionados conversamos con José Soto, Gerente General de Bassis, sobre uno de los grandes desafíos del sector ",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/El-liderazgo-que-transforma-empresas-agro-junto-a-Bassis-e3nrf1o",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/124680696/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-24%2F430465447-44100-2-b2c010143cb7b.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
     },
     {
-      "titulo": "La tecnología detrás de una finca más eficiente | Agrimanager",
+      "titulo": "La tecnología detrás de una finca más eficiente I Agrimanager",
       "fecha": "2026-08-17",
-      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
-      "audio": ""
+      "resumen": "¿Cuánto dinero puede estar perdiendo una finca sin que el productor se dé cuenta? En este episodio de Agroapasionados, conversamos con Camilo Pérez, CEO de Agrimanager, sobre uno de los grandes retos del agro latinoamericano: cómo disminuir desperdicios, controlar la operación y mejorar la rentabili",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/La-tecnologa-detrs-de-una-finca-ms-eficiente-I-Agrimanager-e3ngc1u",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/124317182/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-17%2F429973316-44100-2-05535df1381a6.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
     },
     {
       "titulo": "Cómo escalar una empresa agrícola | La fórmula de Setas Doradas",
       "fecha": "2026-08-10",
-      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
-      "audio": ""
+      "resumen": "¿Qué se necesita para crecer un 20% anual durante cinco años consecutivos en el agro? 🌱 En el capítulo 26 de Agroapasionados conversamos con Felipe Triana, Gerente de Setas Doradas, sobre cómo construir una empresa agrícola desde la cultura, la disciplina y la excelencia operativa. Hablamos de tecn",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Cmo-escalar-una-empresa-agrcola--La-frmula-de-Setas-Doradas-e3n80lp",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/124043385/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-10%2F429599377-44100-2-4e27eb0b11b96.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
     },
     {
       "titulo": "Cómo el marketing puede transformar el agro latinoamericano",
       "fecha": "2026-05-19",
-      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
-      "audio": ""
+      "resumen": "¿Y si el mayor problema del agro latinoamericano no fuera producir… sino comunicar?En este episodio de Agroapasionados conversamos con Mario Valencia, Coordinador de Marketing de DisanAgro, sobre el presente y el futuro del marketing agrícola en Latinoamérica, el impacto de la inteligencia artificia",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Cmo-el-marketing-puede-transformar-el-agro-latinoamericano-e3jinud",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/120200589/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-19%2F424441100-44100-2-3bebe5af03885.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
     },
     {
       "titulo": "El negocio agrícola detrás de Hortifresco: de finca familiar a supermercados de cadena",
       "fecha": "2026-05-11",
-      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
-      "audio": ""
+      "resumen": "Descubre cómo una empresa agrícola colombiana logró crecer desde una finca familiar hasta abastecer supermercados como Éxito, Jumbo, Olímpica y Alkosto. En este episodio hablamos de agronegocios, producción de hortalizas, exportación agrícola, logística en el agro y cómo profesionalizar el campo col",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/El-negocio-agrcola-detrs-de-Hortifresco-de-finca-familiar-a-supermercados-de-cadena-e3j7u8b",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/119846603/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-11%2F423961495-44100-2-741d8bc3f9bfd.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
     },
     {
       "titulo": "Arándanos en Colombia: errores que frenan la rentabilidad",
       "fecha": "2026-05-04",
-      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
-      "audio": ""
+      "resumen": "Arándanos en Colombia: descubre los errores que están frenando la rentabilidad en cultivos y cómo mejorar la productividad en sistemas agrícolas modernos. En este episodio junto a Andrés Trujillo, especialista en cultivos de alto rendimiento en el trópico, analizamos por qué muchos productores no lo",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Arndanos-en-Colombia-errores-que-frenan-la-rentabilidad-e3isrn4",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/119483556/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-4%2F423466159-44100-2-388d65e080f41.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
     },
     {
-      "titulo": "Empresas B en el Agro: el modelo que está redefiniendo los negocios con propósito",
+      "titulo": "Empresas B en el Agro: El Modelo que Está Redefiniendo los Negocios con Propósito en Colombia",
       "fecha": "2026-04-27",
-      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
-      "audio": ""
+      "resumen": "Durante años, el sector agrícola colombiano creyó que hacer las cosas bien tenía un costo. Que la sostenibilidad era un lujo. Que el impacto y la rentabilidad no podían ir juntos. En este episodio desmontamos ese mito, con quien mejor puede hacerlo. Conversamos con Camilo Ramírez, Director Ejecutivo",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Empresas-B-en-el-Agro-El-Modelo-que-Est-Redefiniendo-los-Negocios-con-Propsito-en-Colombia-e3iic1l",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/119139829/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-27%2F422995548-44100-2-2ca74c1c11da1.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
     },
     {
       "titulo": "El negocio del limón Tahití: la oportunidad que está transformando el agro colombiano",
       "fecha": "2026-04-13",
-      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
-      "audio": ""
+      "resumen": "En este episodio de Agroapasionados, conversamos con Santiago Córdoba, CEO de Cetrino, sobre el verdadero potencial del agro como una oportunidad de inversión y desarrollo para Colombia. A partir del caso del limón Tahití, exploramos por qué la inversión agrícola se está consolidando como una altern",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/El-negocio-del-limn-Tahit-la-oportunidad-que-est-transformando-el-agro-colombiano-e3hruqv",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/118405407/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-13%2F422008889-44100-2-6b9d2c1b1acd5.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
     },
     {
       "titulo": "¿Vale la pena trabajar en el agro? La realidad del sector agrícola",
       "fecha": "2026-04-06",
-      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
-      "audio": ""
+      "resumen": "En este nuevo episodio de Agroapasionados, abrimos una conversación clave junto a Marcela Escobar, Gerente de recursos humanos en LATAM de Disanagro, sobre un tema fundamental en el agro: el talento humano. Porque más allá de la tecnología, la producción y la innovación, hay un factor determinante q",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Vale-la-pena-trabajar-en-el-agro--La-realidad-del-sector-agrcola-e3hhbnf",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/118058159/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-6%2F421544577-44100-2-1a9598541faf4.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
     },
     {
       "titulo": "Palma de aceite en Colombia: sostenibilidad y negocio real",
       "fecha": "2026-03-30",
-      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
-      "audio": ""
+      "resumen": "En este nuevo episodio junto a Ximena Mahecha, directora de la Corporación Aceite de Palma Sostenible de Colombia (APS), analizamos el verdadero impacto de la palma de aceite en Colombia, su importancia en la economía y su presencia en la vida cotidiana. Un cultivo clave que muchos consumen a diario",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Palma-de-aceite-en-Colombia-sostenibilidad-y-negocio-real-e3h6ev1",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/117701025/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-30%2F421067694-44100-2-43cf22b01d8f9.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
     },
     {
       "titulo": "Fertilizantes en Colombia: crisis, precios y seguridad alimentaria 2026",
       "fecha": "2026-03-23",
-      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
-      "audio": ""
+      "resumen": "La seguridad alimentaria en Colombia depende directamente de los fertilizantes, y pocos entienden realmente su impacto. En nuestro episodio #18 de Agro Apasionados, conversamos con César Palacios, ingeniero agrónomo con más de 25 años de experiencia, sobre la realidad del mercado de fertilizantes, l",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Fertilizantes-en-Colombia-crisis--precios-y-seguridad-alimentaria-2026-e3gsgl9",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/117375081/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-23%2F420629313-44100-2-4b9fcedfbb826.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "AgroTech en Colombia: Cómo la tecnología está transformando el futuro del campo con EKO2O",
+      "fecha": "2026-01-12",
+      "resumen": "En este episodio de Agroapasionados, conversamos con Jorge Correa, gerente comercial de EKO2O, una empresa que diseña y ejecuta soluciones AgroTech para impulsar el crecimiento del sector agropecuario.Hablamos sobre la importancia de modernizar la agricultura, cómo la tecnología, el diseño eficiente",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/AgroTech-en-Colombia-Cmo-la-tecnologa-est-transformando-el-futuro-del-campo-con-EKO2O-e3dibg0",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/113896384/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-0-12%2F415990372-44100-2-eac03a7a7d0b9.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "Arranca el 2026: visión, talento y el futuro del agro colombiano",
+      "fecha": "2026-01-05",
+      "resumen": "En este episodio de apertura del 2026 en #AgroapasionadosPodcast, conversamos con Felipe Fonseca, director de Abastecimiento y Alianzas Estratégicas en Agroventure Capital, sobre los grandes retos y oportunidades que marcarán el rumbo del agro colombiano en los próximos años. Hablamos de cómo atraer",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Arranca-el-2026-visin--talento-y-el-futuro-del-agro-colombiano-e3d7p7c",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/113549996/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-0-5%2F415551457-44100-2-20b2e90f18b8c.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "Cerramos el año 2025 hablando de agro, proyectos y propósito",
+      "fecha": "2025-12-29",
+      "resumen": "En este episodio especial de cierre de año en #Agroapasionados, me siento profundamente agradecido de compartir una conversación cercana y honesta con Liliana Jiménez, gerente de Proyectos de Agroventure Capital y parte fundamental de nuestro equipo.Hablamos sobre su transición profesional desde la ",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Cerramos-el-ao-2025-hablando-de-agro--proyectos-y-propsito-e3cv0g1",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/113262529/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-11-29%2F415187609-44100-2-14f93869e163d.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "Banano colombiano: sostenibilidad, competitividad y los retos del mercado global",
+      "fecha": "2025-12-22",
+      "resumen": "En este episodio de #Agroapasionados conversamos con Emerson Aguirre Medina, presidente de la Asociación de Bananeros de Colombia, sobre el momento que vive el sector bananero colombiano y los desafíos que enfrenta en un mercado cada vez más exigente.Hablamos del papel de la sostenibilidad ambiental",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Banano-colombiano-sostenibilidad--competitividad-y-los-retos-del-mercado-global-e3cn7oc",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/113007820/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-11-22%2F414864064-44100-2-028fc4dc6900c.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "Sostenibilidad, fertilizantes, y seguridad alimentaria: visión de Yara LATAM",
+      "fecha": "2025-12-15",
+      "resumen": "En este episodio de Agroapasionados conversamos con Andrés Useche, vicepresidente regional de Yara para Latinoamérica, sobre el impacto real que la compañía ha tenido en el agro colombiano y su visión para el futuro del campo.Andrés nos comparte su recorrido profesional hasta liderar una de las oper",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Sostenibilidad--fertilizantes--y-seguridad-alimentaria-visin-de-Yara-LATAM-e3cdf57",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/112687719/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-11-15%2F414452848-44100-2-f06208ed841a7.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "¿Cómo Biodiversal construye productividad con impacto real?",
+      "fecha": "2025-12-08",
+      "resumen": "En este nuevo episodio de Agroapasionado, conversamos con Luis Felipe Arias, CEO de Biodiversal, una empresa colombiana que está demostrando que la rentabilidad, la sostenibilidad y el impacto social sí pueden caminar de la mano.Luis Felipe nos cuenta cómo pasó del mundo jurídico al corazón del agro",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Cmo-Biodiversal-construye-productividad-con-impacto-real-e3c2p6k",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/112337556/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-11-8%2F414006910-44100-2-b4e3b627732bb.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "Tecnología que impulsa el agro: el camino de Galápp",
+      "fecha": "2025-12-01",
+      "resumen": "En este nuevo episodio de #Agroapasionadospodcast exploramos la historia detrás de Galápp, una solución creada para responder a una necesidad real del agro: mejorar la trazabilidad, eficiencia y control del trabajo comercial en las casas de agro insumos. Nicolás Pineda, nuestro invitado especial y C",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Tecnologa-que-impulsa-el-agro-el-camino-de-Galpp-e3bo80k",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/111992276/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-11-1%2F413557429-44100-2-0b655e0f196a4.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "El poder del suelo: la evolución de los fertilizantes y el impacto de Colinagro en el agro",
+      "fecha": "2025-11-24",
+      "resumen": "En este capítulo de Agroapasionados conversamos con Diego Carvajalino, gerente general de Colinagro, una empresa familiar que está a punto de cumplir 80 años acompañando al campo colombiano. Hablamos sobre cómo esta compañía ha evolucionado generación tras generación, impulsando la productividad del",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/El-poder-del-suelo-la-evolucin-de-los-fertilizantes-y-el-impacto-de-Colinagro-en-el-agro-e3bdvij",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/111655955/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-10-24%2F413098604-44100-2-9a83fb8581a8b.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "El agro: el motor verde que mueve la economía",
+      "fecha": "2025-11-17",
+      "resumen": "En este noveno episodio de Agroapasionados, tuve la oportunidad de conversar con Juan Diego Henao, Gerente de Inversiones Internacionales en Agronegocios, un líder clave en la articulación entre capital, sostenibilidad e innovación en el sector agro.En este capítulo exploramos:🌱 Cómo financiar proy",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/El-agro-el-motor-verde-que-mueve-la-economa-e3b3ntj",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/111320435/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-10-17%2F412659155-44100-2-d3b93cae41e8e.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "Arándanos y trabajo colectivo: la fórmula que está transformando el agro colombiano",
+      "fecha": "2025-11-10",
+      "resumen": "En este episodio exploramos cómo una visión compartida y el trabajo colectivo están impulsando la revolución azul en el campo colombiano. Descubre junto a Daniel Chamat cómo nació su pasión por el agro, que lo llevó a apostar por el cultivo de arándanos y cómo iniciativas como ProColBerries y Asober",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Arndanos-y-trabajo-colectivo-la-frmula-que-est-transformando-el-agro-colombiano-e3aplmm",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/110990486/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-10-10%2F412226364-44100-2-520610e66bdc1.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "La Inteligencia Artificial llegó al campo: ¿estamos preparados para adoptarla?",
+      "fecha": "2025-11-03",
+      "resumen": "En este episodio conversamos con Carlos Ramírez, CEO de NeuraAgro, una empresa colombiana que está revolucionando el campo con Inteligencia Artificial aplicada a la agricultura. Carlos nos comparte la historia de su emprendimiento, cómo nació NeuraAgro y los retos de emprender en el agro colombiano,",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/La-Inteligencia-Artificial-lleg-al-campo-estamos-preparados-para-adoptarla-e3af66e",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/110646926/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-10-3%2F410539145-44100-2-fd9fae49cb74b.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "El ICA como motor para construir un agro colombiano con calidad, juventud e innovación",
+      "fecha": "2025-10-27",
+      "resumen": "En este episodio de #AgroapasionadosPodcast, conversamos con Paula Cepeda, gerente general del ICA (Instituto Colombiano Agropecuario), sobre el papel fundamental que cumple esta entidad en la transformación del campo colombiano.Paula nos explica, de manera clara y cercana, qué es el ICA, cuál es su",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/El-ICA-como-motor-para-construir-un-agro-colombiano-con-calidad--juventud-e-innovacin-e3a4i77",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/110298791/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-9-27%2F410083225-44100-2-4602258ad6e2c.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "Boyacá quiere ser referente mundial en el agro; esperan triplicar el PIB del departamento",
+      "fecha": "2025-10-21",
+      "resumen": "En este quinto episodio de #AgroapasionadosPodcast , conversamos con Gheidy Gallo, presidenta de ProBoyacá, una entidad clave en la transformación económica y sostenible del departamento.Hablamos sobre cómo, a través del proyecto Boyacá 2050 y su pilar “Boyacá más verde”, la agricultura puede conver",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Boyac-quiere-ser-referente-mundial-en-el-agro-esperan-triplicar-el-PIB-del-departamento-e39qm0s",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/109975004/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-9-21%2F409656269-44100-2-41ec8a2a9826a.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "¿Está cambiando la forma de financiar el campo colombiano?",
+      "fecha": "2025-10-14",
+      "resumen": "En este cuarto episodio de Agroapasionados Podcast conversamos sobre uno de los temas más cruciales para el crecimiento del campo colombiano: el acceso al financiamiento de los pequeños y grandes proyectos agroindustriales.Exploramos las barreras que enfrentan los productores para acceder a capital,",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Est-cambiando-la-forma-de-financiar-el-campo-colombiano-e39g866",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/109633158/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-9-14%2F409211956-44100-2-97b4b9c16bc5b.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "Cann4bis medicinal: ¿Una oportunidad real para los campesinos colombianos?",
+      "fecha": "2025-10-06",
+      "resumen": "En este episodio de Agroapasionados Podcast , conversamos con Juan Manuel Telez, CEO de Greenlab Colombia , una empresa pionera en el mercado del cann4bismedicinal en Colombia. Hablamos sobre cómo nació este proyecto, los retos de emprender en una industria altamente regulada, las oportunidades en l",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Cann4bis-medicinal-Una-oportunidad-real-para-los-campesinos-colombianos-e396a1j",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/109307379/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-9-6%2F408785870-44100-2-26957f3304b5d.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "El futuro del arándano en Colombia",
+      "fecha": "2025-09-29",
+      "resumen": "¡Bienvenidos a un nuevo episodio de#AgroapasionadosPodcast! En esta ocasión hablamos con Fredy Cortés , presidente de Asocolblue , quien nos cuenta cómo esta asociación está transformando el panorama de los arándanos en Colombia . Hablamos sobre la evolución del sector en los últimos 5 años, los pri",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/El-futuro-del-arndano-en-Colombia-e38sk44",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/108990020/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-8-29%2F408372497-44100-2-bed9f3557f348.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
+    {
+      "titulo": "Desarrollo agrícola para una Colombia ganadora",
+      "fecha": "2025-09-22",
+      "resumen": "¿Puede un pequeño productor de limón en Colombia competir de tú a tú con los grandes exportadores del mundo? En este episodio de Agroapasionados, exploramos esta pregunta con Juan Pablo Duque, CEO de la empresa Equilibria, un modelo innovador que integra tecnología, economía y trabajo en el campo pa",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Desarrollo-agrcola-para-una-Colombia-ganadora-e38j1as",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/108675868/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-8-22%2F407965496-44100-2-e4ea3758fb475.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
     }
   ],
   "columnas": [

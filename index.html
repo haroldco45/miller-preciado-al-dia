@@ -145,6 +145,10 @@ section{padding:56px 0}
 .pod-portada{border-radius:22px;overflow:hidden;box-shadow:var(--sombra);position:sticky;top:76px;align-self:start;background:var(--verde)}
 .pod-portada img{width:100%;aspect-ratio:1;object-fit:cover}
 .pod-portada .txt{padding:16px;color:#fff}
+.spotify{background:#121212;color:#fff;border-radius:20px;padding:16px;margin-bottom:14px;display:flex;flex-direction:column;gap:10px;box-shadow:var(--sombra)}
+.spotify h3{font-size:1.15rem}
+.spotify iframe{border-radius:12px;border:0}
+.spotify .btn{align-self:flex-start}
 .reproductor{background:var(--mora);color:#fff;border-radius:18px;padding:16px;margin-bottom:14px;display:none}
 .reproductor.on{display:block}
 .reproductor audio{width:100%;margin-top:10px}
@@ -302,10 +306,16 @@ footer .anuncio{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-
     <div class="pod-grilla">
       <div class="pod-portada">
         <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg" alt="Portada del podcast AgroApasionados" onerror="this.src='img/reel-estudio.jpg'">
-        <div class="txt"><b>Conducido por Miller Preciado</b><br><small>Desde 2024 · Apple Podcasts y Spotify</small><br><br>
+        <div class="txt"><b>Conducido por Miller Preciado</b><br><small>Desde 2024 · Spotify y Apple Podcasts</small><br><br>
           <a class="btn btn-lima" href="https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985" target="_blank" rel="noopener">Abrir en Apple Podcasts</a></div>
       </div>
       <div>
+        <div class="spotify">
+          <span class="chip">En Spotify</span>
+          <h3>Coco en Colombia: el negocio agroindustrial que puede transformar el Caribe</h3>
+          <iframe title="Episodio de AgroApasionados en Spotify" src="https://open.spotify.com/embed/episode/61iLUvPaDM17MGf1Y4WyHV?utm_source=generator&amp;theme=0" width="100%" height="232" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <a class="btn btn-lima" href="https://open.spotify.com/episode/61iLUvPaDM17MGf1Y4WyHV" target="_blank" rel="noopener">Abrir en Spotify</a>
+        </div>
         <div class="reproductor" id="reproductor"><small>Sonando ahora</small><b id="sonando" style="display:block;font-family:Fraunces,serif;font-size:1.1rem"></b><audio id="audio" controls preload="none"></audio></div>
         <div class="episodios" id="episodios"></div>
       </div>

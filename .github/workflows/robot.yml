@@ -1,0 +1,35 @@
+name: Robot de noticias Miller Preciado
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: robot-noticias
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Traer noticias, podcast y columnas
+        run: node robot/actualizar.mjs
+      - name: Guardar cambios
+        run: |
+          git config user.name "Robot Vibras Positivas HM"
+          git config user.email "robot@users.noreply.github.com"
+          git add data/noticias.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Robot: noticias al día $(TZ=America/Bogota date '+%Y-%m-%d %H:%M') hora Colombia"
+            git push
+          fi

@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Miller Preciado al Día</title>
+<meta name="description" content="Seguimiento al día de Miller Preciado, ingeniero agrónomo, fundador de Agroventure Capital y creador de #AgroApasionados: noticias, podcast, columnas y proyectos de arándanos.">
+<meta name="theme-color" content="#0b3d2e">
+<meta property="og:title" content="Miller Preciado al Día">
+<meta property="og:description" content="Noticias, podcast y proyectos del #AgroApasionado colombiano, actualizados cada 30 minutos.">
+<meta property="og:image" content="img/miller-perfil.jpg">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --verde:#0b3d2e; --verde2:#14563f; --hoja:#1f7a4d; --lima:#c8f04a; --mora:#3d4cc9; --mora2:#7b86ff;
+  --crema:#f5f1e6; --tinta:#10201a; --suave:#5b6b63; --carta:#ffffff; --borde:rgba(16,32,26,.1);
+  --sombra:0 14px 40px -18px rgba(11,61,46,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Manrope,system-ui,sans-serif;background:var(--crema);color:var(--tinta);line-height:1.5;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.envoltura{max-width:1100px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.08;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,4.5vw,2.6rem);margin-bottom:6px}
+.etiqueta{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--hoja)}
+.sub{color:var(--suave);max-width:60ch}
+section{padding:56px 0}
+
+/* Barra superior */
+.barra{position:sticky;top:0;z-index:30;background:rgba(11,61,46,.92);backdrop-filter:blur(10px);color:#fff}
+.barra .envoltura{display:flex;align-items:center;gap:12px;height:58px}
+.barra img{width:34px;height:34px;border-radius:50%;border:2px solid var(--lima);object-fit:cover}
+.barra b{font-family:Fraunces,serif;font-size:1.05rem}
+.barra nav{margin-left:auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.barra nav::-webkit-scrollbar{display:none}
+.barra nav a{font-size:.8rem;font-weight:700;text-decoration:none;padding:7px 10px;border-radius:99px;white-space:nowrap;opacity:.85}
+.barra nav a:hover{background:rgba(255,255,255,.12);opacity:1}
+@media (max-width:720px){.barra nav{display:none}}
+
+/* Ticker */
+.ticker{background:var(--lima);color:var(--verde);font-weight:800;font-size:.86rem;overflow:hidden;white-space:nowrap;border-bottom:1px solid rgba(0,0,0,.08)}
+.ticker .pista{display:inline-flex;gap:48px;padding:9px 0;animation:correr 60s linear infinite}
+.ticker span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--mora);margin-right:10px;vertical-align:middle}
+@keyframes correr{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* Portada */
+.portada{position:relative;color:#fff;overflow:hidden;background:var(--verde);padding:0}
+.portada .fondo{position:absolute;inset:-6%;background:url(img/reel-arandanos.jpg) center/cover;filter:saturate(1.2) brightness(.5);animation:zoom 22s ease-in-out infinite alternate}
+.portada::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(11,61,46,.96) 30%,rgba(61,76,201,.55))}
+@keyframes zoom{from{transform:scale(1)}to{transform:scale(1.12) translate(-2%,-2%)}}
+.portada .envoltura{position:relative;z-index:2;display:grid;grid-template-columns:1.25fr .9fr;gap:36px;align-items:center;padding-top:56px;padding-bottom:64px}
+.portada h1{font-size:clamp(2.6rem,8vw,5rem);font-weight:800}
+.portada h1 em{font-style:normal;color:var(--lima)}
+.portada p.lead{font-size:1.08rem;opacity:.92;margin:16px 0 22px;max-width:52ch}
+.vivo{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:99px;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.vivo i{width:9px;height:9px;border-radius:50%;background:#ff4d4d;box-shadow:0 0 0 0 rgba(255,77,77,.7);animation:latido 1.6s infinite}
+@keyframes latido{70%{box-shadow:0 0 0 10px rgba(255,77,77,0)}100%{box-shadow:0 0 0 0 rgba(255,77,77,0)}}
+.botones{display:flex;flex-wrap:wrap;gap:10px}
+.btn{appearance:none;border:0;cursor:pointer;font:800 .92rem Manrope,system-ui,sans-serif;padding:13px 20px;border-radius:14px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:transform .15s,box-shadow .15s}
+.btn:active{transform:scale(.97)}
+.btn-lima{background:var(--lima);color:var(--verde);box-shadow:0 10px 26px -10px var(--lima)}
+.btn-borde{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)}
+.btn-verde{background:var(--verde);color:#fff}
+.btn[disabled]{opacity:.7;cursor:wait}
+.girando{width:14px;height:14px;border-radius:50%;border:2.5px solid currentColor;border-right-color:transparent;animation:gira .8s linear infinite;display:none}
+.btn.cargando .girando{display:inline-block}
+@keyframes gira{to{transform:rotate(360deg)}}
+.retrato{position:relative;justify-self:center;width:min(340px,80vw);aspect-ratio:1}
+.retrato img{width:100%;height:100%;object-fit:cover;border-radius:50%;border:6px solid var(--lima);box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
+.retrato .anillo{position:absolute;inset:-18px;border-radius:50%;border:2px dashed rgba(200,240,74,.55);animation:gira 40s linear infinite}
+.retrato .sello{position:absolute;right:-6px;bottom:18px;background:var(--mora);color:#fff;font-weight:800;font-size:.8rem;padding:9px 14px;border-radius:12px;box-shadow:var(--sombra);transform:rotate(-4deg)}
+.cifras{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
+.cifra{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:14px}
+.cifra b{display:block;font-family:Fraunces,serif;font-size:1.9rem;color:var(--lima)}
+.cifra small{font-size:.78rem;opacity:.85}
+@media (max-width:820px){.portada .envoltura{grid-template-columns:1fr}.retrato{order:-1;width:min(240px,62vw)}.cifras{grid-template-columns:repeat(2,1fr)}}
+
+/* Hoy */
+.hoy{background:linear-gradient(180deg,var(--crema),#eaf3dc)}
+.hoy-cabeza{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px;margin-bottom:22px}
+.reloj{font-weight:800;color:var(--verde);background:#fff;border:1px solid var(--borde);border-radius:12px;padding:8px 12px;font-size:.85rem}
+.hoy-grilla{display:grid;grid-template-columns:1.4fr 1fr;gap:16px}
+@media (max-width:820px){.hoy-grilla{grid-template-columns:1fr}}
+.destacada{position:relative;border-radius:22px;overflow:hidden;min-height:360px;color:#fff;display:flex;align-items:flex-end;box-shadow:var(--sombra);text-decoration:none}
+.destacada img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 6s ease}
+.destacada:hover img{transform:scale(1.08)}
+.destacada::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,26,20,.95) 10%,rgba(6,26,20,.1) 70%)}
+.destacada .txt{position:relative;z-index:2;padding:22px}
+.destacada h3{font-size:clamp(1.3rem,3.4vw,1.9rem);margin:8px 0}
+.chip{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:99px;background:var(--lima);color:var(--verde)}
+.chip.mora{background:var(--mora);color:#fff}
+.chip.gris{background:rgba(16,32,26,.08);color:var(--verde)}
+.pila{display:flex;flex-direction:column;gap:12px}
+.mini{display:grid;grid-template-columns:96px 1fr;gap:12px;background:#fff;border:1px solid var(--borde);border-radius:16px;padding:10px;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.mini:hover{transform:translateY(-3px);box-shadow:var(--sombra)}
+.mini img{width:96px;height:80px;object-fit:cover;border-radius:10px}
+.mini h4{font-size:.95rem;line-height:1.25;margin:4px 0}
+.mini small{color:var(--suave);font-size:.75rem}
+.aviso{background:#fff;border:1px dashed var(--hoja);border-radius:16px;padding:14px 16px;font-size:.92rem}
+
+/* Noticias */
+.filtros{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 20px}
+.filtros input{flex:1;min-width:200px;font:600 .95rem Manrope,system-ui,sans-serif;padding:12px 14px;border-radius:12px;border:1.5px solid var(--borde);background:#fff}
+.filtros button{font:800 .8rem Manrope,system-ui,sans-serif;padding:10px 14px;border-radius:99px;border:1.5px solid var(--verde);background:transparent;color:var(--verde);cursor:pointer}
+.filtros button.activo{background:var(--verde);color:#fff}
+.grilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.tarjeta{background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--borde);display:flex;flex-direction:column;text-decoration:none;transition:transform .25s,box-shadow .25s;opacity:0;transform:translateY(18px)}
+.tarjeta.ver{opacity:1;transform:none}
+.tarjeta:hover{transform:translateY(-5px);box-shadow:var(--sombra)}
+.tarjeta .foto{aspect-ratio:16/10;overflow:hidden;background:var(--verde2)}
+.tarjeta .foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.tarjeta:hover .foto img{transform:scale(1.07)}
+.tarjeta .cuerpo{padding:14px 16px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.tarjeta h3{font-size:1.08rem}
+.tarjeta p{font-size:.88rem;color:var(--suave)}
+.tarjeta .pie{margin-top:auto;font-size:.75rem;font-weight:700;color:var(--hoja)}
+.mas{display:block;margin:22px auto 0}
+
+/* Agroventure */
+.agro{background:var(--verde);color:#fff;position:relative;overflow:hidden}
+.agro .sub{color:rgba(255,255,255,.8)}
+.agro .etiqueta{color:var(--lima)}
+.agro-grilla{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;margin-top:24px}
+@media (max-width:820px){.agro-grilla{grid-template-columns:1fr}}
+.collage{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:180px 180px;gap:10px}
+.collage img{width:100%;height:100%;object-fit:cover;border-radius:16px}
+.collage img:first-child{grid-row:span 2}
+.metas{display:grid;gap:12px}
+.meta{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:16px}
+.meta b{font-family:Fraunces,serif;font-size:2rem;color:var(--lima);display:block}
+.barra-progreso{height:10px;border-radius:99px;background:rgba(255,255,255,.12);overflow:hidden;margin-top:10px}
+.barra-progreso span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--lima),var(--mora2));border-radius:99px;transition:width 1.8s cubic-bezier(.2,.8,.2,1)}
+.fuente{font-size:.72rem;opacity:.7;margin-top:6px}
+
+/* Podcast */
+.pod-grilla{display:grid;grid-template-columns:320px 1fr;gap:22px;margin-top:22px}
+@media (max-width:820px){.pod-grilla{grid-template-columns:1fr}.pod-portada{position:static}.pod-portada img{aspect-ratio:16/10}}
+.pod-portada{border-radius:22px;overflow:hidden;box-shadow:var(--sombra);position:sticky;top:76px;align-self:start;background:var(--verde)}
+.pod-portada img{width:100%;aspect-ratio:1;object-fit:cover}
+.pod-portada .txt{padding:16px;color:#fff}
+.reproductor{background:var(--mora);color:#fff;border-radius:18px;padding:16px;margin-bottom:14px;display:none}
+.reproductor.on{display:block}
+.reproductor audio{width:100%;margin-top:10px}
+.episodios{display:flex;flex-direction:column;gap:10px;max-height:620px;overflow:auto;padding-right:4px}
+.episodio{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;background:#fff;border:1px solid var(--borde);border-radius:14px;padding:10px}
+.episodio img{width:64px;height:64px;object-fit:cover;border-radius:10px}
+.episodio h4{font-size:.93rem;line-height:1.25}
+.episodio small{color:var(--suave);font-size:.74rem}
+.episodio button,.episodio a.btn{font-size:.78rem;padding:9px 12px;border-radius:10px}
+
+/* Galería */
+.galeria{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;margin-top:22px;scrollbar-width:thin}
+.galeria figure{flex:0 0 min(78vw,300px);scroll-snap-align:start;border-radius:20px;overflow:hidden;position:relative;aspect-ratio:3/4;background:var(--verde)}
+.galeria img{width:100%;height:100%;object-fit:cover}
+.galeria figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px;color:#fff;font-weight:700;font-size:.85rem;background:linear-gradient(0deg,rgba(0,0,0,.75),transparent)}
+
+/* Columnas */
+.columnas{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:20px}
+.columna{background:#fff;border-left:5px solid var(--hoja);border-radius:12px;padding:14px 16px;text-decoration:none;transition:transform .2s}
+.columna:nth-child(3n+2){border-color:var(--mora)}
+.columna:nth-child(3n){border-color:var(--lima)}
+.columna:hover{transform:translateX(4px)}
+.columna h4{font-family:Fraunces,serif;font-size:1.02rem;line-height:1.25}
+.columna small{color:var(--suave);font-size:.75rem}
+
+/* Trayectoria */
+.linea{position:relative;margin-top:24px;padding-left:26px}
+.linea::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:3px;background:linear-gradient(var(--lima),var(--mora));border-radius:3px}
+.hito{position:relative;margin-bottom:20px}
+.hito::before{content:"";position:absolute;left:-24px;top:6px;width:14px;height:14px;border-radius:50%;background:#fff;border:4px solid var(--hoja)}
+.hito b{font-family:Fraunces,serif;font-size:1.1rem}
+.hito p{color:var(--suave);font-size:.92rem}
+
+/* Enlaces */
+.enlaces{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:20px}
+.enlace{background:var(--verde);color:#fff;border-radius:16px;padding:16px;text-decoration:none;font-weight:800;transition:background .2s,transform .2s}
+.enlace small{display:block;font-weight:600;opacity:.75;font-size:.78rem;margin-top:2px}
+.enlace:hover{background:var(--mora);transform:translateY(-3px)}
+
+footer{background:#06221a;color:rgba(255,255,255,.8);padding:34px 0 90px;font-size:.85rem}
+footer b{color:var(--lima)}
+footer .anuncio{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px;margin-bottom:18px}
+
+.flotante{position:fixed;right:16px;bottom:16px;z-index:40;box-shadow:0 14px 30px -10px rgba(0,0,0,.5);opacity:0;pointer-events:none;transform:translateY(20px);transition:opacity .3s,transform .3s}
+.flotante.on{opacity:1;pointer-events:auto;transform:none}
+.aparecer{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.aparecer.ver{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.tarjeta,.aparecer{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="barra">
+  <div class="envoltura">
+    <img src="img/miller-perfil.jpg" alt="Miller Preciado">
+    <b>Miller Preciado al Día</b>
+    <nav>
+      <a href="#hoy">Hoy</a><a href="#noticias">Noticias</a><a href="#agroventure">Agroventure</a>
+      <a href="#podcast">Podcast</a><a href="#columnas">Columnas</a><a href="#quien">Quién es</a>
+    </nav>
+  </div>
+</header>
+<div class="ticker" aria-label="Titulares"><div class="pista" id="ticker"><span>Cargando titulares del #AgroApasionado…</span></div></div>
+
+<section class="portada">
+  <div class="fondo" aria-hidden="true"></div>
+  <div class="envoltura">
+    <div>
+      <span class="vivo"><i></i> Seguimiento en vivo</span>
+      <h1 style="margin-top:14px">Miller Preciado<br><em>al Día</em></h1>
+      <p class="lead">Ingeniero agrónomo, MBA en Finanzas y fundador de Agroventure Capital. Aquí sigues sus proyectos de arándanos, su podcast #AgroApasionados, sus columnas y todo lo que se publica sobre él.</p>
+      <div class="botones">
+        <button class="btn btn-lima" id="btnActualizar"><span class="girando"></span><span class="t">Actualizar ahora</span></button>
+        <a class="btn btn-borde" href="#podcast">Escuchar el podcast</a>
+      </div>
+      <div class="cifras">
+        <div class="cifra"><b data-n="18">0</b><small>años en la gerencia agro</small></div>
+        <div class="cifra"><b data-n="61">0</b><small>episodios de podcast</small></div>
+        <div class="cifra"><b data-n="124">0</b><small>hectáreas meta 2026</small></div>
+        <div class="cifra"><b data-n="52" data-suf="k">0</b><small>#AgroApasionados</small></div>
+      </div>
+    </div>
+    <div class="retrato">
+      <div class="anillo"></div>
+      <img src="img/miller-perfil.jpg" alt="Miller Preciado, ingeniero agrónomo colombiano">
+      <div class="sello">#AgroApasionados</div>
+    </div>
+  </div>
+</section>
+
+<section class="hoy" id="hoy">
+  <div class="envoltura">
+    <div class="hoy-cabeza">
+      <div>
+        <span class="etiqueta">Hoy</span>
+        <h2>Lo más fresco</h2>
+        <p class="sub" id="hoyResumen">Revisando qué se publicó en las últimas horas…</p>
+      </div>
+      <div class="reloj" id="reloj">Colombia —</div>
+    </div>
+    <div class="hoy-grilla">
+      <a class="destacada" id="destacada" href="#" target="_blank" rel="noopener">
+        <img src="img/reel-dream-berries.jpg" alt="">
+        <div class="txt"><span class="chip">Cargando</span><h3>Buscando la noticia más reciente…</h3><small></small></div>
+      </a>
+      <div class="pila" id="pilaHoy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="noticias">
+  <div class="envoltura aparecer">
+    <span class="etiqueta">Noticias</span>
+    <h2>Todo lo que se dice de él</h2>
+    <p class="sub">Un robot revisa Google Noticias, Bing y medios del agro cada 30 minutos. Además, cada vez que abres la app se hace una búsqueda en vivo.</p>
+    <div class="filtros">
+      <input id="buscar" type="search" placeholder="Buscar: arándanos, Boyacá, exportación…">
+      <button data-f="todas" class="activo">Todas</button>
+      <button data-f="2026">2026</button>
+      <button data-f="vivo">En vivo</button>
+    </div>
+    <div class="grilla" id="grilla"></div>
+    <button class="btn btn-verde mas" id="verMas">Ver más noticias</button>
+  </div>
+</section>
+
+<section class="agro" id="agroventure">
+  <div class="envoltura aparecer">
+    <span class="etiqueta">Su proyecto</span>
+    <h2>Agroventure Capital y el arándano colombiano</h2>
+    <p class="sub">Empresa que él fundó para estructurar proyectos de berries bajo agricultura protegida en Boyacá, con expansión a Cundinamarca, financiados con inversionistas institucionales, family offices, fondos y banca.</p>
+    <div class="agro-grilla">
+      <div class="collage">
+        <img src="https://cdn.portalfruticola.com/2026/04/WhatsApp-Image-2026-04-20-at-12.58.54-PM-1.jpeg" alt="Cultivo de arándanos de Agroventure Capital" onerror="this.src='img/reel-dream-berries.jpg'">
+        <img src="img/reel-arandanos.jpg" alt="Arándanos en la mano de un productor">
+        <img src="https://cdn.portalfruticola.com/2025/01/arandanos-en-Colombia.jpeg" alt="Arándanos en Colombia" onerror="this.src='img/reel-estudio.jpg'">
+      </div>
+      <div class="metas">
+        <div class="meta"><b data-n="124">0</b>hectáreas sembradas previstas al cierre de 2026
+          <div class="barra-progreso"><span data-w="25"></span></div><div class="fuente">25% del camino a 500 ha · Portal Frutícola, abr 2026</div></div>
+        <div class="meta"><b data-n="500">0</b>hectáreas es la meta al 2030
+          <div class="barra-progreso"><span data-w="100"></span></div><div class="fuente">Portal Frutícola, abr 2026</div></div>
+        <div class="meta"><b>Tocancipá</b>Planta de empaque en Cundinamarca con capacidad para la fruta de hasta 500 ha, también al servicio de pequeños y medianos productores.<div class="fuente">Proyectada para operar desde agosto de 2026</div></div>
+        <div class="meta"><b>Planasa</b>Genética de las variedades Madeira, Manila y Maldiva.<div class="fuente">International Blueberry Organization</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="podcast">
+  <div class="envoltura aparecer">
+    <span class="etiqueta">Podcast</span>
+    <h2>AgroApasionados Podcast</h2>
+    <p class="sub">Conversaciones con referentes del agro latinoamericano sobre financiamiento, tecnología, exportación y liderazgo. Los episodios nuevos llegan solos.</p>
+    <div class="pod-grilla">
+      <div class="pod-portada">
+        <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg" alt="Portada del podcast AgroApasionados" onerror="this.src='img/reel-estudio.jpg'">
+        <div class="txt"><b>Conducido por Miller Preciado</b><br><small>Desde 2024 · Apple Podcasts y Spotify</small><br><br>
+          <a class="btn btn-lima" href="https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985" target="_blank" rel="noopener">Abrir en Apple Podcasts</a></div>
+      </div>
+      <div>
+        <div class="reproductor" id="reproductor"><small>Sonando ahora</small><b id="sonando" style="display:block;font-family:Fraunces,serif;font-size:1.1rem"></b><audio id="audio" controls preload="none"></audio></div>
+        <div class="episodios" id="episodios"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#eaf3dc">
+  <div class="envoltura aparecer">
+    <span class="etiqueta">En campo</span>
+    <h2>Fotos reales de su trabajo</h2>
+    <div class="galeria" id="galeria">
+      <figure><img src="img/reel-arandanos.jpg" alt=""><figcaption>Invertir en el agro, invertir con propósito</figcaption></figure>
+      <figure><img src="img/reel-dream-berries.jpg" alt=""><figcaption>Visita a Dream Berries Packing</figcaption></figure>
+      <figure><img src="img/reel-estudio.jpg" alt=""><figcaption>En el set de AgroApasionados</figcaption></figure>
+      <figure><img src="https://cdn.portalfruticola.com/2026/04/WhatsApp-Image-2026-04-20-at-12.58.54-PM-1.jpeg" alt="" onerror="this.closest('figure').remove()"><figcaption>Cultivos de Agroventure Capital</figcaption></figure>
+      <figure><img src="https://millerpreciado.com/wp-content/uploads/2024/04/miller.jpg" alt="" onerror="this.closest('figure').remove()"><figcaption>Agricultor de raíz</figcaption></figure>
+      <figure><img src="https://cdn.portalfruticola.com/2025/09/arandanos-Colombia.jpg" alt="" onerror="this.closest('figure').remove()"><figcaption>El arándano colombiano</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="columnas">
+  <div class="envoltura aparecer">
+    <span class="etiqueta">Columnas y blog</span>
+    <h2>Lo que escribe</h2>
+    <p class="sub">Columnista de Más Colombia y Diario Frutícola, y autor de su propio blog.</p>
+    <div class="columnas" id="listaColumnas"></div>
+  </div>
+</section>
+
+<section id="quien" style="background:#fff">
+  <div class="envoltura aparecer">
+    <span class="etiqueta">Quién es</span>
+    <h2>De Tumaco al arándano de exportación</h2>
+    <div class="linea">
+      <div class="hito"><b>Raíces en el Pacífico</b><p>Nació en Cali, pero su mundo agrícola se formó en Tumaco, Nariño, tierra de sus padres y abuelos.</p></div>
+      <div class="hito"><b>Ingeniero agrónomo y MBA en Finanzas</b><p>Especialista en gerencia, con estudios de alta gerencia internacional y formación en la Universidad de los Andes.</p></div>
+      <div class="hito"><b>Elite Blu · The Elite Flower</b><p>Como gerente de operaciones lideró el proyecto de arándanos en Boyacá de la mayor exportadora del fruto en el país.</p></div>
+      <div class="hito"><b>Agroventure Capital</b><p>CEO y fundador. Estructura proyectos agrícolas con capital de inversionistas y acompaña a pequeños y medianos agricultores.</p></div>
+      <div class="hito"><b>Voz del agro</b><p>Columnista, conferencista en eventos como Nación Berries y creador del podcast y la comunidad #AgroApasionados.</p></div>
+    </div>
+    <h3 style="margin-top:30px;font-size:1.4rem">Síguelo</h3>
+    <div class="enlaces">
+      <a class="enlace" href="https://www.instagram.com/millerpreciado_/" target="_blank" rel="noopener">Instagram<small>@millerpreciado_</small></a>
+      <a class="enlace" href="https://linktr.ee/millerpreciado" target="_blank" rel="noopener">Linktree<small>Todos sus enlaces</small></a>
+      <a class="enlace" href="https://www.linkedin.com/in/millerpreciado/" target="_blank" rel="noopener">LinkedIn<small>Artículos y conferencias</small></a>
+      <a class="enlace" href="https://millerpreciado.com/" target="_blank" rel="noopener">Sitio web<small>millerpreciado.com</small></a>
+      <a class="enlace" href="https://agroventurecapital.com.co/" target="_blank" rel="noopener">Agroventure Capital<small>agroventurecapital.com.co</small></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="envoltura">
+    <div class="anuncio">
+      <div><b>¿Quieres una app así para tu negocio o tu marca?</b><br>Apps que se actualizan solas, con fotos y videos reales.</div>
+      <a class="btn btn-lima" href="https://wa.me/573117700431?text=Hola%20Harold,%20vi%20la%20app%20Miller%20Preciado%20al%20D%C3%ADa%20y%20quiero%20una" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    </div>
+    <p>Software por <b>Vibras Positivas HM</b> · vibraspositivashm.com</p>
+    <p style="margin-top:6px;opacity:.7">App de seguimiento no oficial, hecha con información pública. Cada noticia enlaza a su fuente original. <span id="pieActualizado"></span></p>
+  </div>
+</footer>
+
+<button class="btn btn-lima flotante" id="btnFlotante"><span class="girando"></span><span class="t">Actualizar</span></button>
+
+<script>
+const TZ = 'America/Bogota';
+const FOTOS = ['img/reel-arandanos.jpg','img/reel-dream-berries.jpg','img/reel-estudio.jpg'];
+const BUSQUEDA = 'https://news.google.com/rss/search?q=%22Miller+Preciado%22+OR+%22Agroventure+Capital%22&hl=es-419&gl=CO&ceid=CO:es-419';
+let datos = {noticias:[], podcast:[], columnas:[]};
+let vivo = [];
+let filtro = 'todas', mostrar = 9;
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt = (f, op) => f ? new Intl.DateTimeFormat('es-CO', {timeZone:TZ, ...op}).format(new Date(f)) : '';
+const diaCo = d => fmt(d, {year:'numeric', month:'2-digit', day:'2-digit'});
+function hace(f){
+  if(!f) return '';
+  const m = (Date.now() - new Date(f)) / 60000;
+  if (m < 60) return `hace ${Math.max(1, Math.round(m))} min`;
+  if (m < 1440) return `hace ${Math.round(m/60)} h`;
+  if (m < 2880) return 'ayer';
+  return fmt(f, {day:'numeric', month:'short', year:'numeric'});
+}
+const foto = (n, i) => n.imagen || FOTOS[i % FOTOS.length];
+const imgTag = (src, i, alt='') => `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" onerror="this.onerror=null;this.src='${FOTOS[i%FOTOS.length]}'">`;
+
+function todas(){
+  const vistos = new Set(), out = [];
+  for (const n of [...vivo, ...datos.noticias]) {
+    const k = (n.titulo||'').toLowerCase().replace(/[^a-z0-9áéíóúñ]+/g,' ').trim().slice(0,70);
+    if (!k || vistos.has(k)) continue; vistos.add(k); out.push(n);
+  }
+  return out.sort((a,b) => new Date(b.fecha||0) - new Date(a.fecha||0));
+}
+
+function reloj(){
+  $('#reloj').textContent = 'Colombia · ' + fmt(new Date(), {weekday:'long', day:'numeric', month:'long', hour:'numeric', minute:'2-digit'});
+}
+
+function pintarHoy(){
+  const lista = todas();
+  const hoy = diaCo(new Date());
+  const recientes = lista.filter(n => n.fecha && (Date.now() - new Date(n.fecha)) < 72*3600e3);
+  const deHoy = lista.filter(n => n.fecha && diaCo(n.fecha) === hoy);
+  const principal = (recientes[0] || lista[0]);
+  if (deHoy.length) $('#hoyResumen').textContent = `${deHoy.length} ${deHoy.length===1?'publicación nueva':'publicaciones nuevas'} hoy sobre Miller Preciado y Agroventure Capital.`;
+  else if (recientes.length) $('#hoyResumen').textContent = `Hoy todavía no hay notas nuevas. Esto es lo de los últimos tres días.`;
+  else $('#hoyResumen').textContent = `Hoy no hay notas nuevas sobre él. Te mostramos lo más reciente; la app vuelve a buscar cada vez que entras.`;
+  if (principal) {
+    const d = $('#destacada');
+    d.href = principal.link || '#';
+    d.innerHTML = `${imgTag(foto(principal,1),1,principal.titulo)}<div class="txt"><span class="chip ${principal.vivo?'mora':''}">${principal.vivo?'En vivo':esc(principal.medio||'Noticia')}</span><h3>${esc(principal.titulo)}</h3><small>${hace(principal.fecha)}</small></div>`;
+  }
+  const ep = datos.podcast[0];
+  const otras = lista.filter(n => n !== principal).slice(0,2);
+  let html = otras.map((n,i) => `<a class="mini" href="${esc(n.link)}" target="_blank" rel="noopener">${imgTag(foto(n,i+2),i+2)}<div><span class="chip gris">${esc(n.medio||'')}</span><h4>${esc(n.titulo)}</h4><small>${hace(n.fecha)}</small></div></a>`).join('');
+  if (ep) html += `<a class="mini" href="#podcast" data-ep="0">${imgTag(ep.imagen||'img/reel-estudio.jpg',0)}<div><span class="chip mora">Último episodio</span><h4>${esc(ep.titulo)}</h4><small>${ep.fecha?fmt(ep.fecha+'T12:00:00-05:00',{day:'numeric',month:'long',year:'numeric'}):''}</small></div></a>`;
+  html += `<div class="aviso"><b>Dato del día:</b> ${datoDelDia()}</div>`;
+  $('#pilaHoy').innerHTML = html;
+}
+
+function datoDelDia(){
+  const d = [
+    'Colombia tiene cerca de 1.000 hectáreas de arándano en producción y casi el 95% se consume en el país.',
+    'Miller Preciado estima que Colombia podría llegar a 5.000 o 6.000 hectáreas de arándano hacia 2030.',
+    'Según él, Colombia puede superar 30 a 35 toneladas de arándano por hectárea.',
+    'De lo poco que se exporta, más del 90% del arándano colombiano va a Estados Unidos.',
+    'Agroventure Capital construye una planta de empaque en Tocancipá para la fruta de hasta 500 hectáreas.',
+    'Su podcast AgroApasionados ya pasa de 60 episodios con invitados del agro latinoamericano.'
+  ];
+  const n = Number(fmt(new Date(), {day:'numeric'})) || 1;
+  return d[n % d.length];
+}
+
+function pintarNoticias(){
+  const q = $('#buscar').value.trim().toLowerCase();
+  let lista = todas();
+  if (filtro === '2026') lista = lista.filter(n => (n.fecha||'').startsWith('2026'));
+  if (filtro === 'vivo') lista = lista.filter(n => n.vivo);
+  if (q) lista = lista.filter(n => (n.titulo+' '+n.resumen+' '+n.medio).toLowerCase().includes(q));
+  const g = $('#grilla');
+  if (!lista.length) { g.innerHTML = `<div class="aviso">${filtro==='vivo'?'La búsqueda en vivo no trajo notas nuevas en este momento.':'No hay noticias con esa búsqueda.'}</div>`; $('#verMas').style.display='none'; return; }
+  g.innerHTML = lista.slice(0, mostrar).map((n,i) => `
+    <a class="tarjeta" href="${esc(n.link)}" target="_blank" rel="noopener">
+      <div class="foto">${imgTag(foto(n,i),i,n.titulo)}</div>
+      <div class="cuerpo">
+        <span>${n.vivo?'<span class="chip mora">En vivo</span> ':''}<span class="chip gris">${esc(n.medio||'')}</span></span>
+        <h3>${esc(n.titulo)}</h3>
+        ${n.resumen?`<p>${esc(n.resumen.slice(0,170))}${n.resumen.length>170?'…':''}</p>`:''}
+        <div class="pie">${hace(n.fecha)} · Leer en la fuente</div>
+      </div></a>`).join('');
+  $('#verMas').style.display = lista.length > mostrar ? 'block' : 'none';
+  requestAnimationFrame(() => g.querySelectorAll('.tarjeta').forEach((t,i) => setTimeout(() => t.classList.add('ver'), i*60)));
+}
+
+function pintarTicker(){
+  const t = todas().slice(0,10).map(n => `<span>${esc(n.titulo)}</span>`).join('');
+  $('#ticker').innerHTML = t + t;
+}
+
+function pintarPodcast(){
+  $('#episodios').innerHTML = datos.podcast.map((e,i) => `
+    <div class="episodio">
+      ${imgTag(e.imagen || 'img/reel-estudio.jpg', i)}
+      <div><h4>${esc(e.titulo)}</h4><small>${e.fecha?fmt(e.fecha+'T12:00:00-05:00',{day:'numeric',month:'short',year:'numeric'}):''}</small></div>
+      ${e.audio ? `<button class="btn btn-lima" data-ep="${i}">Escuchar</button>` : `<a class="btn btn-verde" href="${esc(e.link)}" target="_blank" rel="noopener">Abrir</a>`}
+    </div>`).join('');
+}
+function sonar(i){
+  const e = datos.podcast[i];
+  if (!e || !e.audio) { location.hash = '#podcast'; return; }
+  $('#reproductor').classList.add('on');
+  $('#sonando').textContent = e.titulo;
+  const a = $('#audio'); a.src = e.audio; a.play().catch(()=>{});
+  $('#reproductor').scrollIntoView({behavior:'smooth', block:'center'});
+}
+document.addEventListener('click', ev => {
+  const b = ev.target.closest('[data-ep]');
+  if (b && datos.podcast[b.dataset.ep] && datos.podcast[b.dataset.ep].audio) { ev.preventDefault(); sonar(+b.dataset.ep); }
+});
+
+function pintarColumnas(){
+  $('#listaColumnas').innerHTML = datos.columnas.map(c => `
+    <a class="columna" href="${esc(c.link)}" target="_blank" rel="noopener"><small>${esc(c.medio)}${c.fecha?' · '+fmt(c.fecha+'T12:00:00-05:00',{month:'short',year:'numeric'}):''}</small><h4>${esc(c.titulo)}</h4></a>`).join('');
+}
+
+function pintarTodo(){
+  pintarHoy(); pintarNoticias(); pintarTicker(); pintarPodcast(); pintarColumnas();
+  if (datos.actualizado) $('#pieActualizado').textContent = 'Robot: última revisión ' + fmt(datos.actualizado, {day:'numeric', month:'short', hour:'numeric', minute:'2-digit'}) + ' hora Colombia.';
+}
+
+async function cargarDatos(){
+  try {
+    const r = await fetch('data/noticias.json?t=' + Date.now(), {cache:'no-store'});
+    if (r.ok) datos = await r.json();
+  } catch(e) {}
+}
+
+// Búsqueda en vivo al abrir: Google Noticias a través de lectores RSS públicos
+async function buscarEnVivo(){
+  const leer = [
+    async () => {
+      const r = await fetch('https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(BUSQUEDA));
+      const j = await r.json(); if (j.status !== 'ok') throw 0;
+      return j.items.map(x => ({titulo:x.title, link:x.link, fecha:x.pubDate ? new Date(x.pubDate.replace(' ','T')+'Z').toISOString() : '', resumen:'', medio:x.author||''}));
+    },
+    async () => {
+      const r = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(BUSQUEDA));
+      const xml = new DOMParser().parseFromString(await r.text(), 'text/xml');
+      return [...xml.querySelectorAll('item')].map(it => ({
+        titulo: it.querySelector('title')?.textContent || '', link: it.querySelector('link')?.textContent || '',
+        fecha: new Date(it.querySelector('pubDate')?.textContent || 0).toISOString(), resumen:'', medio: it.querySelector('source')?.textContent || ''}));
+    }
+  ];
+  for (const f of leer) {
+    try {
+      const items = await f();
+      vivo = items.map(n => {
+        if (n.medio && n.titulo.endsWith(' - ' + n.medio)) n.titulo = n.titulo.slice(0, -(n.medio.length + 3));
+        else if (!n.medio && / - [^-]+$/.test(n.titulo)) { n.medio = n.titulo.split(' - ').pop(); n.titulo = n.titulo.slice(0, -(n.medio.length + 3)); }
+        return {...n, vivo:true};
+      }).filter(n => n.titulo).slice(0, 20);
+      return true;
+    } catch(e) {}
+  }
+  return false;
+}
+
+async function actualizar(){
+  const bs = [$('#btnActualizar'), $('#btnFlotante')];
+  bs.forEach(b => { b.disabled = true; b.classList.add('cargando'); b.querySelector('.t').textContent = 'Actualizando…'; });
+  await cargarDatos(); pintarTodo();
+  const ok = await buscarEnVivo(); pintarTodo(); reloj();
+  bs.forEach((b,i) => { b.disabled = false; b.classList.remove('cargando'); b.querySelector('.t').textContent = ok ? 'Al día' : 'Actualizado'; setTimeout(() => b.querySelector('.t').textContent = i ? 'Actualizar' : 'Actualizar ahora', 2500); });
+}
+
+// Animaciones: contadores, barras y aparición
+const obs = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  const el = e.target; obs.unobserve(el);
+  if (el.dataset.n) {
+    const fin = +el.dataset.n, suf = el.dataset.suf || '', t0 = performance.now();
+    const paso = t => { const p = Math.min(1, (t - t0) / 1600); el.textContent = Math.round(fin * (1 - Math.pow(1 - p, 3))) + suf; if (p < 1) requestAnimationFrame(paso); };
+    requestAnimationFrame(paso);
+  } else if (el.dataset.w) el.style.width = el.dataset.w + '%';
+  else el.classList.add('ver');
+}), {threshold:.25});
+document.querySelectorAll('[data-n],[data-w],.aparecer').forEach(el => obs.observe(el));
+
+// Galería que se mueve sola
+setInterval(() => {
+  const g = $('#galeria'); if (!g || g.matches(':hover')) return;
+  const fin = g.scrollLeft + g.clientWidth >= g.scrollWidth - 10;
+  g.scrollTo({left: fin ? 0 : g.scrollLeft + 314, behavior:'smooth'});
+}, 3500);
+
+$('#buscar').addEventListener('input', () => { mostrar = 9; pintarNoticias(); });
+document.querySelectorAll('.filtros button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.filtros button').forEach(x => x.classList.remove('activo'));
+  b.classList.add('activo'); filtro = b.dataset.f; mostrar = 9; pintarNoticias();
+}));
+$('#verMas').addEventListener('click', () => { mostrar += 9; pintarNoticias(); });
+$('#btnActualizar').addEventListener('click', actualizar);
+$('#btnFlotante').addEventListener('click', actualizar);
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') actualizar(); });
+
+window.addEventListener('scroll', () => $('#btnFlotante').classList.toggle('on', scrollY > innerHeight * .8), {passive:true});
+reloj(); setInterval(reloj, 30000);
+actualizar();
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>
+</body>
+</html>

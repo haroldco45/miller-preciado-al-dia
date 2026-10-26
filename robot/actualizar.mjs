@@ -4,6 +4,9 @@ import { readFile, writeFile } from 'node:fs/promises';
 
 const ARCHIVO = new URL('../data/noticias.json', import.meta.url);
 const UA = 'Mozilla/5.0 (compatible; VibrasPositivasHM-Robot/1.0; +https://github.com/haroldco45)';
+// Su sitio millerpreciado.com está hackeado (redirige a apuestas): nunca se enlaza ni se lee
+const BLOQUEO = /millerpreciado\.com|slot|gacor|togel|casino|judi|daftar/i;
+const seguro = (l) => l.filter((n) => !BLOQUEO.test(`${n.link || ''} ${n.titulo || ''} ${n.imagen || ''}`));
 const FOTOS_PROPIAS = ['img/reel-arandanos.jpg', 'img/reel-dream-berries.jpg', 'img/reel-estudio.jpg'];
 
 const NOTICIAS = [
@@ -14,7 +17,6 @@ const NOTICIAS = [
 ];
 const PODCAST = 'https://anchor.fm/s/f17c5578/podcast/rss';
 const COLUMNAS = [
-  ['https://millerpreciado.com/feed/', 'Blog millerpreciado.com'],
   ['https://mascolombia.com/author/miller-preciado/feed/', 'Más Colombia'],
 ];
 
@@ -130,9 +132,9 @@ n.forEach((x, i) => { if (!x.imagen) x.imagen = FOTOS_PROPIAS[i % FOTOS_PROPIAS.
 const nuevo = {
   actualizado: horaBogota(),
   fuente: 'robot',
-  noticias: unir(n, viejo.noticias || [], 80),
-  podcast: p && p.length ? p : (viejo.podcast || []),
-  columnas: unir(c, viejo.columnas || [], 40),
+  noticias: seguro(unir(n, viejo.noticias || [], 80)),
+  podcast: seguro(p && p.length ? p : (viejo.podcast || [])),
+  columnas: seguro(unir(c, viejo.columnas || [], 40)),
 };
 
 const antes = JSON.stringify({ ...viejo, actualizado: '', fuente: '' });

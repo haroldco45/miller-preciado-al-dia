@@ -68,29 +68,121 @@
     }
   ],
   "podcast": [
-    {"titulo": "Coco en Colombia: el negocio agroindustrial que puede transformar el Caribe", "fecha": "2026-09-08", "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985", "audio": ""},
-    {"titulo": "Cómo convertir una finca de café en un negocio rentable y exportable", "fecha": "2026-08-31", "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985", "audio": ""},
-    {"titulo": "El liderazgo que transforma empresas agro junto a Bassis", "fecha": "2026-08-25", "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985", "audio": ""},
-    {"titulo": "La tecnología detrás de una finca más eficiente | Agrimanager", "fecha": "2026-08-17", "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985", "audio": ""},
-    {"titulo": "Cómo escalar una empresa agrícola | La fórmula de Setas Doradas", "fecha": "2026-08-10", "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985", "audio": ""},
-    {"titulo": "Cómo el marketing puede transformar el agro latinoamericano", "fecha": "2026-05-19", "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985", "audio": ""},
-    {"titulo": "El negocio agrícola detrás de Hortifresco: de finca familiar a supermercados de cadena", "fecha": "2026-05-11", "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985", "audio": ""},
-    {"titulo": "Arándanos en Colombia: errores que frenan la rentabilidad", "fecha": "2026-05-04", "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985", "audio": ""},
-    {"titulo": "Empresas B en el Agro: el modelo que está redefiniendo los negocios con propósito", "fecha": "2026-04-27", "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985", "audio": ""},
-    {"titulo": "El negocio del limón Tahití: la oportunidad que está transformando el agro colombiano", "fecha": "2026-04-13", "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985", "audio": ""},
-    {"titulo": "¿Vale la pena trabajar en el agro? La realidad del sector agrícola", "fecha": "2026-04-06", "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985", "audio": ""},
-    {"titulo": "Palma de aceite en Colombia: sostenibilidad y negocio real", "fecha": "2026-03-30", "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985", "audio": ""},
-    {"titulo": "Fertilizantes en Colombia: crisis, precios y seguridad alimentaria 2026", "fecha": "2026-03-23", "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985", "audio": ""}
+    {
+      "titulo": "Coco en Colombia: el negocio agroindustrial que puede transformar el Caribe",
+      "fecha": "2026-09-08",
+      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
+      "audio": ""
+    },
+    {
+      "titulo": "Cómo convertir una finca de café en un negocio rentable y exportable",
+      "fecha": "2026-08-31",
+      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
+      "audio": ""
+    },
+    {
+      "titulo": "El liderazgo que transforma empresas agro junto a Bassis",
+      "fecha": "2026-08-25",
+      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
+      "audio": ""
+    },
+    {
+      "titulo": "La tecnología detrás de una finca más eficiente | Agrimanager",
+      "fecha": "2026-08-17",
+      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
+      "audio": ""
+    },
+    {
+      "titulo": "Cómo escalar una empresa agrícola | La fórmula de Setas Doradas",
+      "fecha": "2026-08-10",
+      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
+      "audio": ""
+    },
+    {
+      "titulo": "Cómo el marketing puede transformar el agro latinoamericano",
+      "fecha": "2026-05-19",
+      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
+      "audio": ""
+    },
+    {
+      "titulo": "El negocio agrícola detrás de Hortifresco: de finca familiar a supermercados de cadena",
+      "fecha": "2026-05-11",
+      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
+      "audio": ""
+    },
+    {
+      "titulo": "Arándanos en Colombia: errores que frenan la rentabilidad",
+      "fecha": "2026-05-04",
+      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
+      "audio": ""
+    },
+    {
+      "titulo": "Empresas B en el Agro: el modelo que está redefiniendo los negocios con propósito",
+      "fecha": "2026-04-27",
+      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
+      "audio": ""
+    },
+    {
+      "titulo": "El negocio del limón Tahití: la oportunidad que está transformando el agro colombiano",
+      "fecha": "2026-04-13",
+      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
+      "audio": ""
+    },
+    {
+      "titulo": "¿Vale la pena trabajar en el agro? La realidad del sector agrícola",
+      "fecha": "2026-04-06",
+      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
+      "audio": ""
+    },
+    {
+      "titulo": "Palma de aceite en Colombia: sostenibilidad y negocio real",
+      "fecha": "2026-03-30",
+      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
+      "audio": ""
+    },
+    {
+      "titulo": "Fertilizantes en Colombia: crisis, precios y seguridad alimentaria 2026",
+      "fecha": "2026-03-23",
+      "link": "https://podcasts.apple.com/us/podcast/agroventure-podcast/id1739670985",
+      "audio": ""
+    }
   ],
   "columnas": [
-    {"titulo": "Liderazgo rural: clave para la innovación e impacto social", "medio": "Blog millerpreciado.com", "fecha": "2025-10-30", "link": "https://millerpreciado.com/blog/"},
-    {"titulo": "Perspectivas agrícolas 2023-2032: análisis y oportunidad para América Latina", "medio": "Blog millerpreciado.com", "fecha": "2025-10-27", "link": "https://millerpreciado.com/blog/"},
-    {"titulo": "Agricultura regenerativa: cultiva un futuro sostenible", "medio": "Blog millerpreciado.com", "fecha": "2025-10-07", "link": "https://millerpreciado.com/blog/"},
-    {"titulo": "Digitalización rural: cerrando brechas para el futuro del agro", "medio": "Blog millerpreciado.com", "fecha": "2025-07-29", "link": "https://millerpreciado.com/blog/"},
-    {"titulo": "El mundo de las berries: una oportunidad dorada para la agricultura latinoamericana", "medio": "Blog millerpreciado.com", "fecha": "2025-07-24", "link": "https://millerpreciado.com/blog/"},
-    {"titulo": "Agricultura y cambio climático: un papel central en la sostenibilidad global", "medio": "Diario Frutícola", "fecha": "2024-05-07", "link": "https://www.diariofruticola.cl/noticia/noticias-agricolas/2024/05/agricultura-y-cambio-climatico-un-papel-central-en-la-sostenibilidad-global"},
-    {"titulo": "Frutales: la dulce oportunidad de Colombia", "medio": "Más Colombia", "fecha": "", "link": "https://mascolombia.com/columnista/miller-preciado/"},
-    {"titulo": "Extranjerización de la tierra y desarrollo agrícola en Colombia: un enfoque crítico", "medio": "Más Colombia", "fecha": "", "link": "https://mascolombia.com/columnista/miller-preciado/"},
-    {"titulo": "La reforma del pensamiento agrícola colombiano", "medio": "Más Colombia", "fecha": "", "link": "https://mascolombia.com/la-reforma-del-pensamiento-agricola-colombiano/amp/"}
+    {
+      "titulo": "El agro: una de las mayores oportunidades de inversión de las próximas décadas",
+      "medio": "LinkedIn",
+      "fecha": "2026-03-17",
+      "link": "https://www.linkedin.com/in/millerpreciado/"
+    },
+    {
+      "titulo": "Agricultura 2025: exportaciones, innovación y retos del sector agro",
+      "medio": "LinkedIn",
+      "fecha": "2026-01-15",
+      "link": "https://www.linkedin.com/in/millerpreciado/"
+    },
+    {
+      "titulo": "Agricultura y cambio climático: un papel central en la sostenibilidad global",
+      "medio": "Diario Frutícola",
+      "fecha": "2024-05-07",
+      "link": "https://www.diariofruticola.cl/noticia/noticias-agricolas/2024/05/agricultura-y-cambio-climatico-un-papel-central-en-la-sostenibilidad-global"
+    },
+    {
+      "titulo": "Frutales: la dulce oportunidad de Colombia",
+      "medio": "Más Colombia",
+      "fecha": "",
+      "link": "https://mascolombia.com/columnista/miller-preciado/"
+    },
+    {
+      "titulo": "Extranjerización de la tierra y desarrollo agrícola en Colombia: un enfoque crítico",
+      "medio": "Más Colombia",
+      "fecha": "",
+      "link": "https://mascolombia.com/columnista/miller-preciado/"
+    },
+    {
+      "titulo": "La reforma del pensamiento agrícola colombiano",
+      "medio": "Más Colombia",
+      "fecha": "",
+      "link": "https://mascolombia.com/la-reforma-del-pensamiento-agricola-colombiano/amp/"
+    }
   ]
 }

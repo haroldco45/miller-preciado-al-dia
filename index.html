@@ -323,7 +323,6 @@ footer .anuncio{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-
       <figure><img src="img/reel-dream-berries.jpg" alt=""><figcaption>Visita a Dream Berries Packing</figcaption></figure>
       <figure><img src="img/reel-estudio.jpg" alt=""><figcaption>En el set de AgroApasionados</figcaption></figure>
       <figure><img src="https://cdn.portalfruticola.com/2026/04/WhatsApp-Image-2026-04-20-at-12.58.54-PM-1.jpeg" alt="" onerror="this.closest('figure').remove()"><figcaption>Cultivos de Agroventure Capital</figcaption></figure>
-      <figure><img src="https://millerpreciado.com/wp-content/uploads/2024/04/miller.jpg" alt="" onerror="this.closest('figure').remove()"><figcaption>Agricultor de raíz</figcaption></figure>
       <figure><img src="https://cdn.portalfruticola.com/2025/09/arandanos-Colombia.jpg" alt="" onerror="this.closest('figure').remove()"><figcaption>El arándano colombiano</figcaption></figure>
     </div>
   </div>
@@ -333,7 +332,7 @@ footer .anuncio{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-
   <div class="envoltura aparecer">
     <span class="etiqueta">Columnas y blog</span>
     <h2>Lo que escribe</h2>
-    <p class="sub">Columnista de Más Colombia y Diario Frutícola, y autor de su propio blog.</p>
+    <p class="sub">Columnista de Más Colombia y Diario Frutícola, y autor de artículos en LinkedIn.</p>
     <div class="columnas" id="listaColumnas"></div>
   </div>
 </section>
@@ -354,7 +353,6 @@ footer .anuncio{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-
       <a class="enlace" href="https://www.instagram.com/millerpreciado_/" target="_blank" rel="noopener">Instagram<small>@millerpreciado_</small></a>
       <a class="enlace" href="https://linktr.ee/millerpreciado" target="_blank" rel="noopener">Linktree<small>Todos sus enlaces</small></a>
       <a class="enlace" href="https://www.linkedin.com/in/millerpreciado/" target="_blank" rel="noopener">LinkedIn<small>Artículos y conferencias</small></a>
-      <a class="enlace" href="https://millerpreciado.com/" target="_blank" rel="noopener">Sitio web<small>millerpreciado.com</small></a>
       <a class="enlace" href="https://agroventurecapital.com.co/" target="_blank" rel="noopener">Agroventure Capital<small>agroventurecapital.com.co</small></a>
     </div>
   </div>
@@ -375,6 +373,8 @@ footer .anuncio{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-
 
 <script>
 const TZ = 'America/Bogota';
+const BLOQUEO = /millerpreciado\.com|slot|gacor|togel|casino|judi|daftar/i;
+const limpia = l => (l || []).filter(n => !BLOQUEO.test((n.link||'') + ' ' + (n.titulo||'') + ' ' + (n.imagen||'')));
 const FOTOS = ['img/reel-arandanos.jpg','img/reel-dream-berries.jpg','img/reel-estudio.jpg'];
 const BUSQUEDA = 'https://news.google.com/rss/search?q=%22Miller+Preciado%22+OR+%22Agroventure+Capital%22&hl=es-419&gl=CO&ceid=CO:es-419';
 let datos = {noticias:[], podcast:[], columnas:[]};
@@ -507,7 +507,7 @@ function pintarTodo(){
 async function cargarDatos(){
   try {
     const r = await fetch('data/noticias.json?t=' + Date.now(), {cache:'no-store'});
-    if (r.ok) datos = await r.json();
+    if (r.ok) { datos = await r.json(); ['noticias','podcast','columnas'].forEach(k => datos[k] = limpia(datos[k])); }
   } catch(e) {}
 }
 
@@ -534,7 +534,8 @@ async function buscarEnVivo(){
         if (n.medio && n.titulo.endsWith(' - ' + n.medio)) n.titulo = n.titulo.slice(0, -(n.medio.length + 3));
         else if (!n.medio && / - [^-]+$/.test(n.titulo)) { n.medio = n.titulo.split(' - ').pop(); n.titulo = n.titulo.slice(0, -(n.medio.length + 3)); }
         return {...n, vivo:true};
-      }).filter(n => n.titulo).slice(0, 20);
+      }).filter(n => n.titulo);
+      vivo = limpia(vivo).slice(0, 20);
       return true;
     } catch(e) {}
   }

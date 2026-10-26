@@ -1,5 +1,5 @@
 // Miller Preciado al Día — service worker
-const CACHE = 'miller-al-dia-v3';
+const CACHE = 'miller-al-dia-v4';
 const BASE = ['./', 'index.html', 'manifest.json', 'icon-192.png', 'icon-512.png',
   'img/miller-perfil.jpg', 'img/reel-arandanos.jpg', 'img/reel-dream-berries.jpg', 'img/reel-estudio.jpg',
   'data/noticias.json'];

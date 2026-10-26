@@ -42,7 +42,8 @@ section{padding:56px 0}
 .barra nav::-webkit-scrollbar{display:none}
 .barra nav a{font-size:.8rem;font-weight:700;text-decoration:none;padding:7px 10px;border-radius:99px;white-space:nowrap;opacity:.85}
 .barra nav a:hover{background:rgba(255,255,255,.12);opacity:1}
-@media (max-width:720px){.barra nav{display:none}}
+.idioma{margin-left:8px;font:800 .78rem Manrope,system-ui,sans-serif;color:var(--verde);background:var(--lima);border:0;border-radius:99px;padding:9px 14px;cursor:pointer;min-height:36px}
+@media (max-width:720px){.barra nav{display:none}.idioma{margin-left:auto}}
 
 /* Ticker */
 .ticker{background:var(--lima);color:var(--verde);font-weight:800;font-size:.86rem;overflow:hidden;white-space:nowrap;border-bottom:1px solid rgba(0,0,0,.08)}
@@ -207,6 +208,7 @@ footer .anuncio{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-
       <a href="#hoy">Hoy</a><a href="#noticias">Noticias</a><a href="#agroventure">Agroventure</a>
       <a href="#podcast">Podcast</a><a href="#columnas">Columnas</a><a href="#quien">Quién es</a>
     </nav>
+    <button class="idioma" id="btnIdioma" type="button">English</button>
   </div>
 </header>
 <div class="ticker" aria-label="Titulares"><div class="pista" id="ticker"><span>Cargando titulares del #AgroApasionado…</span></div></div>
@@ -382,15 +384,100 @@ let vivo = [];
 let filtro = 'todas', mostrar = 9;
 
 const $ = s => document.querySelector(s);
+// ---------- Idioma: español / English ----------
+let LANG = (() => { try { const g = localStorage.getItem('idioma'); if (g) return g; } catch(e) {} return (navigator.language || '').toLowerCase().startsWith('en') ? 'en' : 'es'; })();
+const T = (es, en) => LANG === 'en' ? en : es;
+const LOC = () => LANG === 'en' ? 'en-US' : 'es-CO';
+const EN = {
+  'Miller Preciado al Día':'Miller Preciado Today', 'al Día':'Today', 'Hoy':'Today', 'Noticias':'News', 'Columnas':'Columns', 'Quién es':'Who he is',
+  'Seguimiento en vivo':'Live tracking',
+  'Ingeniero agrónomo, MBA en Finanzas y fundador de Agroventure Capital. Aquí sigues sus proyectos de arándanos, su podcast #AgroApasionados, sus columnas y todo lo que se publica sobre él.':'Agronomist, MBA in Finance and founder of Agroventure Capital. Follow his blueberry projects, his #AgroApasionados podcast, his columns and everything published about him.',
+  'Escuchar el podcast':'Listen to the podcast', 'años en la gerencia agro':'years in agribusiness management', 'episodios de podcast':'podcast episodes', 'hectáreas meta 2026':'hectares, 2026 target',
+  'Lo más fresco':'The latest', 'Todo lo que se dice de él':'Everything said about him',
+  'Un robot revisa Google Noticias, Bing y medios del agro cada 30 minutos. Además, cada vez que abres la app se hace una búsqueda en vivo.':'A robot checks Google News, Bing and farm media every 30 minutes. Plus, every time you open the app it runs a live search.',
+  'Todas':'All', 'En vivo':'Live', 'Ver más noticias':'See more news',
+  'Su proyecto':'His project', 'Agroventure Capital y el arándano colombiano':'Agroventure Capital and the Colombian blueberry',
+  'Empresa que él fundó para estructurar proyectos de berries bajo agricultura protegida en Boyacá, con expansión a Cundinamarca, financiados con inversionistas institucionales, family offices, fondos y banca.':'The company he founded to structure greenhouse berry projects in Boyacá, expanding into Cundinamarca, funded by institutional investors, family offices, funds and banks.',
+  'hectáreas sembradas previstas al cierre de 2026':'hectares planted expected by the end of 2026', '25% del camino a 500 ha · Portal Frutícola, abr 2026':'25% of the way to 500 ha · Portal Frutícola, Apr 2026',
+  'hectáreas es la meta al 2030':'hectares is the 2030 goal', 'Portal Frutícola, abr 2026':'Portal Frutícola, Apr 2026',
+  'Planta de empaque en Cundinamarca con capacidad para la fruta de hasta 500 ha, también al servicio de pequeños y medianos productores.':'Packing plant in Cundinamarca able to handle fruit from up to 500 ha, also serving small and medium growers.',
+  'Proyectada para operar desde agosto de 2026':'Expected to operate from August 2026', 'Genética de las variedades Madeira, Manila y Maldiva.':'Genetics of the Madeira, Manila and Maldiva varieties.',
+  'Conversaciones con referentes del agro latinoamericano sobre financiamiento, tecnología, exportación y liderazgo. Los episodios nuevos llegan solos.':'Conversations with leaders of Latin American agriculture about financing, technology, exports and leadership. New episodes arrive on their own.',
+  'Conducido por Miller Preciado · desde 2024':'Hosted by Miller Preciado · since 2024', 'Sonando ahora':'Now playing', 'Ver todos los episodios':'See all episodes',
+  'En campo':'In the field', 'Fotos reales de su trabajo':'Real photos of his work', 'Invertir en el agro, invertir con propósito':'Investing in agriculture, investing with purpose',
+  'Visita a Dream Berries Packing':'Visit to Dream Berries Packing', 'En el set de AgroApasionados':'On the AgroApasionados set', 'Cultivos de Agroventure Capital':'Agroventure Capital crops', 'El arándano colombiano':'The Colombian blueberry',
+  'Columnas y blog':'Columns and articles', 'Lo que escribe':'What he writes', 'Columnista de Más Colombia y Diario Frutícola, y autor de artículos en LinkedIn.':'Columnist for Más Colombia and Diario Frutícola, and author of articles on LinkedIn.',
+  'De Tumaco al arándano de exportación':'From Tumaco to export blueberries', 'Raíces en el Pacífico':'Roots in the Pacific',
+  'Nació en Cali, pero su mundo agrícola se formó en Tumaco, Nariño, tierra de sus padres y abuelos.':'Born in Cali, his farming world took shape in Tumaco, Nariño, the land of his parents and grandparents.',
+  'Ingeniero agrónomo y MBA en Finanzas':'Agronomist and MBA in Finance', 'Especialista en gerencia, con estudios de alta gerencia internacional y formación en la Universidad de los Andes.':'Management specialist, with international executive studies and training at Universidad de los Andes.',
+  'Como gerente de operaciones lideró el proyecto de arándanos en Boyacá de la mayor exportadora del fruto en el país.':'As operations manager he led the Boyacá blueberry project of the country\'s largest exporter of the fruit.',
+  'CEO y fundador. Estructura proyectos agrícolas con capital de inversionistas y acompaña a pequeños y medianos agricultores.':'CEO and founder. He structures farm projects with investor capital and supports small and medium farmers.',
+  'Voz del agro':'A voice for agriculture', 'Columnista, conferencista en eventos como Nación Berries y creador del podcast y la comunidad #AgroApasionados.':'Columnist, speaker at events such as Nación Berries, and creator of the #AgroApasionados podcast and community.',
+  'Síguelo':'Follow him', 'Todos sus enlaces':'All his links', 'Artículos y conferencias':'Articles and talks',
+  '¿Quieres una app así para tu negocio o tu marca?':'Want an app like this for your business or brand?', 'Apps que se actualizan solas, con fotos y videos reales.':'Apps that update themselves, with real photos and videos.',
+  'Escribir por WhatsApp':'Message on WhatsApp', 'Software por':'Software by',
+  'App de seguimiento no oficial, hecha con información pública. Cada noticia enlaza a su fuente original.':'Unofficial tracking app built from public information. Every story links to its original source.'
+};
+const DINAMICOS = '#ticker,#destacada,#pilaHoy,#grilla,#episodios,#listaColumnas,#hoyResumen,#reloj,#pieActualizado,#sonando,.t,script,style,#btnIdioma';
+const textos = [];
+function recogerTextos(){
+  const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  let n; while ((n = w.nextNode())) {
+    const k = n.textContent.trim();
+    if (k && EN[k] && !n.parentElement.closest(DINAMICOS)) textos.push([n, n.textContent, k]);
+  }
+}
+function etiquetasBotones(){
+  $('#btnActualizar .t').textContent = T('Actualizar ahora','Update now');
+  $('#btnFlotante .t').textContent = T('Actualizar','Update');
+}
+function aplicarIdioma(){
+  document.documentElement.lang = LANG;
+  document.title = T('Miller Preciado al Día','Miller Preciado Today');
+  for (const [n, orig, k] of textos) n.textContent = LANG === 'en' ? orig.replace(k, EN[k]) : orig;
+  $('#buscar').placeholder = T('Buscar: arándanos, Boyacá, exportación…','Search: blueberries, Boyacá, exports…');
+  $('#btnIdioma').textContent = T('English','Español');
+  $('#btnIdioma').setAttribute('aria-label', T('Ver la app en inglés','View the app in Spanish'));
+  etiquetasBotones(); reloj();
+}
+// Traducción automática de titulares, resúmenes y episodios (Google Translate), con memoria
+const TR = (() => { try { return JSON.parse(localStorage.getItem('traducciones') || '{}'); } catch(e) { return {}; } })();
+const cola = new Set(); let trabajando = false, temporizador = 0;
+function tx(s){
+  if (LANG !== 'en' || !s) return s;
+  if (TR[s]) return TR[s];
+  cola.add(s); clearTimeout(temporizador); temporizador = setTimeout(traducirCola, 60);
+  return s;
+}
+async function traducirUno(s){
+  try {
+    const r = await fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=' + encodeURIComponent(s.slice(0, 900)));
+    const j = await r.json();
+    const t = (j[0] || []).map(p => p[0]).join('').trim();
+    if (t) TR[s] = t;
+  } catch(e) { TR[s] = s; }
+}
+async function traducirCola(){
+  if (trabajando || !cola.size) return;
+  trabajando = true;
+  while (cola.size) {
+    const lote = [...cola].slice(0, 4); lote.forEach(x => cola.delete(x));
+    await Promise.all(lote.map(traducirUno));
+  }
+  trabajando = false;
+  try { localStorage.setItem('traducciones', JSON.stringify(TR).length < 400000 ? JSON.stringify(TR) : '{}'); } catch(e) {}
+  pintarTodo();
+}
+// ----------------------------------------------
 const esc = s => String(s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const fmt = (f, op) => f ? new Intl.DateTimeFormat('es-CO', {timeZone:TZ, ...op}).format(new Date(f)) : '';
-const diaCo = d => fmt(d, {year:'numeric', month:'2-digit', day:'2-digit'});
+const fmt = (f, op) => f ? new Intl.DateTimeFormat(LOC(), {timeZone:TZ, ...op}).format(new Date(f)) : '';
+const diaCo = d => new Intl.DateTimeFormat('es-CO', {timeZone:TZ, year:'numeric', month:'2-digit', day:'2-digit'}).format(new Date(d));
 function hace(f){
   if(!f) return '';
   const m = (Date.now() - new Date(f)) / 60000;
-  if (m < 60) return `hace ${Math.max(1, Math.round(m))} min`;
-  if (m < 1440) return `hace ${Math.round(m/60)} h`;
-  if (m < 2880) return 'ayer';
+  if (m < 60) return T(`hace ${Math.max(1, Math.round(m))} min`, `${Math.max(1, Math.round(m))} min ago`);
+  if (m < 1440) return T(`hace ${Math.round(m/60)} h`, `${Math.round(m/60)} h ago`);
+  if (m < 2880) return T('ayer', 'yesterday');
   return fmt(f, {day:'numeric', month:'short', year:'numeric'});
 }
 const foto = (n, i) => n.imagen || FOTOS[i % FOTOS.length];
@@ -415,19 +502,19 @@ function pintarHoy(){
   const recientes = lista.filter(n => n.fecha && (Date.now() - new Date(n.fecha)) < 72*3600e3);
   const deHoy = lista.filter(n => n.fecha && diaCo(n.fecha) === hoy);
   const principal = (recientes[0] || lista[0]);
-  if (deHoy.length) $('#hoyResumen').textContent = `${deHoy.length} ${deHoy.length===1?'publicación nueva':'publicaciones nuevas'} hoy sobre Miller Preciado y Agroventure Capital.`;
-  else if (recientes.length) $('#hoyResumen').textContent = `Hoy todavía no hay notas nuevas. Esto es lo de los últimos tres días.`;
-  else $('#hoyResumen').textContent = `Hoy no hay notas nuevas sobre él. Te mostramos lo más reciente; la app vuelve a buscar cada vez que entras.`;
+  if (deHoy.length) $('#hoyResumen').textContent = T(`${deHoy.length} ${deHoy.length===1?'publicación nueva':'publicaciones nuevas'} hoy sobre Miller Preciado y Agroventure Capital.`, `${deHoy.length} new ${deHoy.length===1?'story':'stories'} today about Miller Preciado and Agroventure Capital.`);
+  else if (recientes.length) $('#hoyResumen').textContent = T('Hoy todavía no hay notas nuevas. Esto es lo de los últimos tres días.', 'No new stories yet today. Here is what came out in the last three days.');
+  else $('#hoyResumen').textContent = T('Hoy no hay notas nuevas sobre él. Te mostramos lo más reciente; la app vuelve a buscar cada vez que entras.', 'No new stories about him today. Here is the latest; the app searches again every time you open it.');
   if (principal) {
     const d = $('#destacada');
     d.href = principal.link || '#';
-    d.innerHTML = `${imgTag(foto(principal,1),1,principal.titulo)}<div class="txt"><span class="chip ${principal.vivo?'mora':''}">${principal.vivo?'En vivo':esc(principal.medio||'Noticia')}</span><h3>${esc(principal.titulo)}</h3><small>${hace(principal.fecha)}</small></div>`;
+    d.innerHTML = `${imgTag(foto(principal,1),1,principal.titulo)}<div class="txt"><span class="chip ${principal.vivo?'mora':''}">${principal.vivo?T('En vivo','Live'):esc(principal.medio||T('Noticia','News'))}</span><h3>${esc(tx(principal.titulo))}</h3><small>${hace(principal.fecha)}</small></div>`;
   }
   const ep = datos.podcast[0];
   const otras = lista.filter(n => n !== principal).slice(0,2);
-  let html = otras.map((n,i) => `<a class="mini" href="${esc(n.link)}" target="_blank" rel="noopener">${imgTag(foto(n,i+2),i+2)}<div><span class="chip gris">${esc(n.medio||'')}</span><h4>${esc(n.titulo)}</h4><small>${hace(n.fecha)}</small></div></a>`).join('');
-  if (ep) html += `<a class="mini" href="#podcast" data-ep="0">${imgTag(ep.imagen||'img/reel-estudio.jpg',0)}<div><span class="chip mora">Último episodio</span><h4>${esc(ep.titulo)}</h4><small>${ep.fecha?fmt(ep.fecha+'T12:00:00-05:00',{day:'numeric',month:'long',year:'numeric'}):''}</small></div></a>`;
-  html += `<div class="aviso"><b>Dato del día:</b> ${datoDelDia()}</div>`;
+  let html = otras.map((n,i) => `<a class="mini" href="${esc(n.link)}" target="_blank" rel="noopener">${imgTag(foto(n,i+2),i+2)}<div><span class="chip gris">${esc(n.medio||'')}</span><h4>${esc(tx(n.titulo))}</h4><small>${hace(n.fecha)}</small></div></a>`).join('');
+  if (ep) html += `<a class="mini" href="#podcast" data-ep="0">${imgTag(ep.imagen||'img/reel-estudio.jpg',0)}<div><span class="chip mora">${T('Último episodio','Latest episode')}</span><h4>${esc(tx(ep.titulo))}</h4><small>${ep.fecha?fmt(ep.fecha+'T12:00:00-05:00',{day:'numeric',month:'long',year:'numeric'}):''}</small></div></a>`;
+  html += `<div class="aviso"><b>${T('Dato del día:','Fact of the day:')}</b> ${datoDelDia()}</div>`;
   $('#pilaHoy').innerHTML = html;
 }
 
@@ -440,8 +527,16 @@ function datoDelDia(){
     'Agroventure Capital construye una planta de empaque en Tocancipá para la fruta de hasta 500 hectáreas.',
     'Su podcast AgroApasionados ya pasa de 60 episodios con invitados del agro latinoamericano.'
   ];
-  const n = Number(fmt(new Date(), {day:'numeric'})) || 1;
-  return d[n % d.length];
+  const en = [
+    'Colombia has about 1,000 hectares of blueberries in production, and almost 95% is eaten in the country.',
+    'Miller Preciado estimates Colombia could reach 5,000 to 6,000 hectares of blueberries by 2030.',
+    'According to him, Colombia can exceed 30 to 35 tons of blueberries per hectare.',
+    'Of the little that is exported, more than 90% of Colombian blueberries go to the United States.',
+    'Agroventure Capital is building a packing plant in Tocancipá for fruit from up to 500 hectares.',
+    'His AgroApasionados podcast now has more than 60 episodes with guests from Latin American agriculture.'
+  ];
+  const n = new Date().getUTCDate();
+  return (LANG === 'en' ? en : d)[n % d.length];
 }
 
 function pintarNoticias(){
@@ -449,24 +544,24 @@ function pintarNoticias(){
   let lista = todas();
   if (filtro === '2026') lista = lista.filter(n => (n.fecha||'').startsWith('2026'));
   if (filtro === 'vivo') lista = lista.filter(n => n.vivo);
-  if (q) lista = lista.filter(n => (n.titulo+' '+n.resumen+' '+n.medio).toLowerCase().includes(q));
+  if (q) lista = lista.filter(n => (n.titulo+' '+n.resumen+' '+n.medio+' '+tx(n.titulo)+' '+tx(n.resumen||'')).toLowerCase().includes(q));
   const g = $('#grilla');
-  if (!lista.length) { g.innerHTML = `<div class="aviso">${filtro==='vivo'?'La búsqueda en vivo no trajo notas nuevas en este momento.':'No hay noticias con esa búsqueda.'}</div>`; $('#verMas').style.display='none'; return; }
+  if (!lista.length) { g.innerHTML = `<div class="aviso">${filtro==='vivo'?T('La búsqueda en vivo no trajo notas nuevas en este momento.','The live search found no new stories right now.'):T('No hay noticias con esa búsqueda.','No news matches that search.')}</div>`; $('#verMas').style.display='none'; return; }
   g.innerHTML = lista.slice(0, mostrar).map((n,i) => `
     <a class="tarjeta" href="${esc(n.link)}" target="_blank" rel="noopener">
       <div class="foto">${imgTag(foto(n,i),i,n.titulo)}</div>
       <div class="cuerpo">
-        <span>${n.vivo?'<span class="chip mora">En vivo</span> ':''}<span class="chip gris">${esc(n.medio||'')}</span></span>
-        <h3>${esc(n.titulo)}</h3>
-        ${n.resumen?`<p>${esc(n.resumen.slice(0,170))}${n.resumen.length>170?'…':''}</p>`:''}
-        <div class="pie">${hace(n.fecha)} · Leer en la fuente</div>
+        <span>${n.vivo?`<span class="chip mora">${T('En vivo','Live')}</span> `:''}<span class="chip gris">${esc(n.medio||'')}</span></span>
+        <h3>${esc(tx(n.titulo))}</h3>
+        ${n.resumen?`<p>${esc(tx(n.resumen).slice(0,170))}${tx(n.resumen).length>170?'…':''}</p>`:''}
+        <div class="pie">${hace(n.fecha)} · ${T('Leer en la fuente','Read at the source')}</div>
       </div></a>`).join('');
   $('#verMas').style.display = lista.length > mostrar ? 'block' : 'none';
   requestAnimationFrame(() => g.querySelectorAll('.tarjeta').forEach((t,i) => setTimeout(() => t.classList.add('ver'), i*60)));
 }
 
 function pintarTicker(){
-  const t = todas().slice(0,10).map(n => `<span>${esc(n.titulo)}</span>`).join('');
+  const t = todas().slice(0,10).map(n => `<span>${esc(tx(n.titulo))}</span>`).join('');
   $('#ticker').innerHTML = t + t;
 }
 
@@ -476,8 +571,8 @@ function pintarPodcast(){
   $('#episodios').innerHTML = lista.map((e,i) => `
     <div class="episodio">
       ${imgTag(e.imagen || 'img/reel-estudio.jpg', i)}
-      <div><h4>${esc(e.titulo)}</h4><small>${e.fecha?fmt(e.fecha+'T12:00:00-05:00',{day:'numeric',month:'short',year:'numeric'}):''}</small></div>
-      ${e.audio ? `<button class="btn btn-lima" data-ep="${i}">Escuchar</button>` : `<a class="btn btn-verde" href="${esc(e.link)}" target="_blank" rel="noopener">Abrir</a>`}
+      <div><h4>${esc(tx(e.titulo))}</h4><small>${e.fecha?fmt(e.fecha+'T12:00:00-05:00',{day:'numeric',month:'short',year:'numeric'}):''}</small></div>
+      ${e.audio ? `<button class="btn btn-lima" data-ep="${i}">${T('Escuchar','Listen')}</button>` : `<a class="btn btn-verde" href="${esc(e.link)}" target="_blank" rel="noopener">${T('Abrir','Open')}</a>`}
     </div>`).join('');
   $('#masEpisodios').style.display = datos.podcast.length > 6 && !todosEp ? 'block' : 'none';
 }
@@ -485,7 +580,7 @@ function sonar(i){
   const e = datos.podcast[i];
   if (!e || !e.audio) { location.hash = '#podcast'; return; }
   $('#reproductor').classList.add('on');
-  $('#sonando').textContent = e.titulo;
+  $('#sonando').textContent = tx(e.titulo);
   const a = $('#audio'); a.src = e.audio; a.play().catch(()=>{});
   $('#reproductor').scrollIntoView({behavior:'smooth', block:'center'});
 }
@@ -496,12 +591,12 @@ document.addEventListener('click', ev => {
 
 function pintarColumnas(){
   $('#listaColumnas').innerHTML = datos.columnas.map(c => `
-    <a class="columna" href="${esc(c.link)}" target="_blank" rel="noopener"><small>${esc(c.medio)}${c.fecha?' · '+fmt(c.fecha+'T12:00:00-05:00',{month:'short',year:'numeric'}):''}</small><h4>${esc(c.titulo)}</h4></a>`).join('');
+    <a class="columna" href="${esc(c.link)}" target="_blank" rel="noopener"><small>${esc(c.medio)}${c.fecha?' · '+fmt(c.fecha+'T12:00:00-05:00',{month:'short',year:'numeric'}):''}</small><h4>${esc(tx(c.titulo))}</h4></a>`).join('');
 }
 
 function pintarTodo(){
   pintarHoy(); pintarNoticias(); pintarTicker(); pintarPodcast(); pintarColumnas();
-  if (datos.actualizado) $('#pieActualizado').textContent = 'Robot: última revisión ' + fmt(datos.actualizado, {day:'numeric', month:'short', hour:'numeric', minute:'2-digit'}) + ' hora Colombia.';
+  if (datos.actualizado) $('#pieActualizado').textContent = T('Robot: última revisión ', 'Robot: last check ') + fmt(datos.actualizado, {day:'numeric', month:'short', hour:'numeric', minute:'2-digit'}) + T(' hora Colombia.', ' Colombia time.');
 }
 
 async function cargarDatos(){
@@ -544,10 +639,10 @@ async function buscarEnVivo(){
 
 async function actualizar(){
   const bs = [$('#btnActualizar'), $('#btnFlotante')];
-  bs.forEach(b => { b.disabled = true; b.classList.add('cargando'); b.querySelector('.t').textContent = 'Actualizando…'; });
+  bs.forEach(b => { b.disabled = true; b.classList.add('cargando'); b.querySelector('.t').textContent = T('Actualizando…','Updating…'); });
   await cargarDatos(); pintarTodo();
   const ok = await buscarEnVivo(); pintarTodo(); reloj();
-  bs.forEach((b,i) => { b.disabled = false; b.classList.remove('cargando'); b.querySelector('.t').textContent = ok ? 'Al día' : 'Actualizado'; setTimeout(() => b.querySelector('.t').textContent = i ? 'Actualizar' : 'Actualizar ahora', 2500); });
+  bs.forEach((b,i) => { b.disabled = false; b.classList.remove('cargando'); b.querySelector('.t').textContent = ok ? T('Al día','Up to date') : T('Actualizado','Updated'); setTimeout(etiquetasBotones, 2500); });
 }
 
 // Animaciones: contadores, barras y aparición
@@ -578,10 +673,16 @@ document.querySelectorAll('.filtros button').forEach(b => b.addEventListener('cl
 $('#masEpisodios').addEventListener('click', () => { todosEp = true; pintarPodcast(); });
 $('#verMas').addEventListener('click', () => { mostrar += 9; pintarNoticias(); });
 $('#btnActualizar').addEventListener('click', actualizar);
+$('#btnIdioma').addEventListener('click', () => {
+  LANG = LANG === 'en' ? 'es' : 'en';
+  try { localStorage.setItem('idioma', LANG); } catch(e) {}
+  aplicarIdioma(); pintarTodo();
+});
 $('#btnFlotante').addEventListener('click', actualizar);
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') actualizar(); });
 
 window.addEventListener('scroll', () => $('#btnFlotante').classList.toggle('on', scrollY > innerHeight * .8), {passive:true});
+recogerTextos(); aplicarIdioma();
 reloj(); setInterval(reloj, 30000);
 actualizar();
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});

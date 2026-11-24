@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-22T18:25:42-05:00",
+  "actualizado": "2026-11-23T20:36:07-05:00",
   "fuente": "robot",
   "noticias": [
     {
@@ -116,6 +116,14 @@
     }
   ],
   "podcast": [
+    {
+      "titulo": "Distribución de insumos agrícolas: cómo innovar y reducir costos en el agro colombiano",
+      "fecha": "2026-11-23",
+      "resumen": "¿Cómo puede un aliado estratégico transformar la distribución de insumos agrícolas y mejorar la rentabilidad del productor? En este capítulo de AgroApasionados conocemos cómo la innovación, la logística y el acompañamiento comercial están transformando los negocios del agro colombiano. En esta conve",
+      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Distribucin-de-insumos-agrcolas-cmo-innovar-y-reducir-costos-en-el-agro-colombiano-e3ssll2",
+      "audio": "https://anchor.fm/s/f17c5578/podcast/play/129963106/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F437447527-44100-2-c99184e826c488.mp3",
+      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
+    },
     {
       "titulo": "Coco en Colombia: el negocio agroindustrial que puede transformar el Caribe",
       "fecha": "2026-09-08",
@@ -347,14 +355,6 @@
       "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/El-futuro-del-arndano-en-Colombia-e38sk44",
       "audio": "https://anchor.fm/s/f17c5578/podcast/play/108990020/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-8-29%2F408372497-44100-2-bed9f3557f348.mp3",
       "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
-    },
-    {
-      "titulo": "Desarrollo agrícola para una Colombia ganadora",
-      "fecha": "2025-09-22",
-      "resumen": "¿Puede un pequeño productor de limón en Colombia competir de tú a tú con los grandes exportadores del mundo? En este episodio de Agroapasionados, exploramos esta pregunta con Juan Pablo Duque, CEO de la empresa Equilibria, un modelo innovador que integra tecnología, economía y trabajo en el campo pa",
-      "link": "https://podcasters.spotify.com/pod/show/agro-voces/episodes/Desarrollo-agrcola-para-una-Colombia-ganadora-e38j1as",
-      "audio": "https://anchor.fm/s/f17c5578/podcast/play/108675868/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-8-22%2F407965496-44100-2-e4ea3758fb475.mp3",
-      "imagen": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40414574/40414574-1758557467699-6b09b0306989a.jpg"
     }
   ],
   "columnas": [
@@ -377,16 +377,76 @@
       "link": "https://www.diariofruticola.cl/noticia/noticias-agricolas/2024/05/agricultura-y-cambio-climatico-un-papel-central-en-la-sostenibilidad-global"
     },
     {
-      "titulo": "Frutales: la dulce oportunidad de Colombia",
+      "titulo": "Un propósito superior: el viaje del héroe en el mundo agrícola",
       "medio": "Más Colombia",
-      "fecha": "",
-      "link": "https://mascolombia.com/columnista/miller-preciado/"
+      "fecha": "2024-03-14",
+      "link": "https://mascolombia.com/viaje-del-heroe-en-el-mundo-agricola/"
+    },
+    {
+      "titulo": "Frutales: La dulce oportunidad de Colombia",
+      "medio": "Más Colombia",
+      "fecha": "2024-01-11",
+      "link": "https://mascolombia.com/frutales-la-dulce-oportunidad-de-colombia/"
     },
     {
       "titulo": "Extranjerización de la tierra y desarrollo agrícola en Colombia: un enfoque crítico",
       "medio": "Más Colombia",
-      "fecha": "",
-      "link": "https://mascolombia.com/columnista/miller-preciado/"
+      "fecha": "2023-12-14",
+      "link": "https://mascolombia.com/extranjerizacion-de-la-tierra-y-desarrollo-agricola/"
+    },
+    {
+      "titulo": "La ruralidad en Colombia",
+      "medio": "Más Colombia",
+      "fecha": "2023-11-16",
+      "link": "https://mascolombia.com/ruralidad-en-colombia/"
+    },
+    {
+      "titulo": "La educación: cimiento de la productividad en la agricultura",
+      "medio": "Más Colombia",
+      "fecha": "2023-11-09",
+      "link": "https://mascolombia.com/educacion-productividad-en-la-agricultura/"
+    },
+    {
+      "titulo": "Esos ambientalistas: la sostenibilidad como respuesta",
+      "medio": "Más Colombia",
+      "fecha": "2023-10-19",
+      "link": "https://mascolombia.com/esos-ambientalistas-la-sostenibilidad-como-respuesta/"
+    },
+    {
+      "titulo": "Genética: la clave del desarrollo agrícola",
+      "medio": "Más Colombia",
+      "fecha": "2023-10-06",
+      "link": "https://mascolombia.com/genetica-la-clave-del-desarrollo-agricola/"
+    },
+    {
+      "titulo": "El cambio climático y su impacto en la agricultura: un desafío urgente",
+      "medio": "Más Colombia",
+      "fecha": "2023-09-29",
+      "link": "https://mascolombia.com/el-cambio-climatico-y-su-impacto-en-la-agricultura-un-desafio-urgente/"
+    },
+    {
+      "titulo": "Flexibilidad vs. admisibilidad del crédito agropecuario: un análisis completo",
+      "medio": "Más Colombia",
+      "fecha": "2023-09-14",
+      "link": "https://mascolombia.com/flexibilidad-vs-admisibilidad-del-credito-agropecuario-un-analisis-completo/"
+    },
+    {
+      "titulo": "La agricultura regenerativa: Cosechando un futuro más sostenible",
+      "medio": "Más Colombia",
+      "fecha": "2023-09-07",
+      "link": "https://mascolombia.com/la-agricultura-regenerativa-cosechando-un-futuro-mas-sostenible/"
+    },
+    {
+      "titulo": "Navegando el cambio en las empresas agrícolas",
+      "medio": "Más Colombia",
+      "fecha": "2023-08-31",
+      "link": "https://mascolombia.com/navegando-el-cambio-en-las-empresas-agricolas/"
+    },
+    {
+      "titulo": "Exportaciones agrícolas desde Colombia: océanos azules a la vista",
+      "medio": "Más Colombia",
+      "fecha": "2023-08-24",
+      "link": "https://mascolombia.com/exportaciones-agricolas-desde-colombia-oceanos-azules-a-la-vista/"
     },
     {
       "titulo": "La reforma del pensamiento agrícola colombiano",
